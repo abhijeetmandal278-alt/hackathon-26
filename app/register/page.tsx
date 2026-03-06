@@ -1,25 +1,27 @@
 'use client'
 import { supabase } from '../supabase'
 import { useState } from 'react'
+import { useRouter } from 'next/navigation' // 1. Added this import
 
 export default function Register() {
+    const router = useRouter() // 2. Initialize the router
     const [formData, setFormData] = useState({ name: '', email: '', github: '' })
-    const [loading, setLoading] = useState(false) // 1. Added loading state
+    const [loading, setLoading] = useState(false)
 
     const handleSubmit = async (e: React.FormEvent) => {
-        e.preventDefault()
-        setLoading(true) // 2. Start loading
-
-        const { error } = await supabase.from('registrations').insert([formData])
+    e.preventDefault()
+    setLoading(true)
     
-        if (error) {
-            alert('Error: ' + error.message)
+    const { error } = await supabase.from('registrations').insert([formData])
+    
+    if (error) {
+        alert('Error: ' + error.message)
+        setLoading(false)
     } else {
-        alert('Success! You are registered for HACK_26.')
-        setFormData({ name: '', email: '', github: '' }) 
+      // 3. Replaced the alert with a redirect to the /thanks page
+        router.push('/thanks') 
     }
-    setLoading(false) // 3. Stop loading
-    }
+}
 
 return (
     <div className="min-h-screen bg-slate-900 text-white flex flex-col items-center justify-center p-4">
