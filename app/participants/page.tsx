@@ -39,8 +39,8 @@ export default function Participants() {
                 </tr>
                 </thead>
                 <tbody className="divide-y divide-slate-700">
-                {students.map((student) => (
-                    <tr key={student.id} className="hover:bg-slate-700/50 transition">
+                {students.map((student, index) => (
+                    <tr key={index}>
                     <td className="px-6 py-4 font-medium">{student.name}</td>
                     <td className="px-6 py-4 text-slate-400">{student.email}</td>
                     <td className="px-6 py-4 text-indigo-300">@{student.github}</td>
