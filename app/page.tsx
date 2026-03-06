@@ -9,10 +9,12 @@ export default function Home() {
           <a href="#schedule" className="hover:text-white transition">Schedule</a>
           <a href="#prizes" className="hover:text-white transition">Prizes</a>
         </div>
+        <a href="/register">
         <button className="bg-indigo-600 hover:bg-indigo-500 px-5 py-2 rounded-lg font-medium transition">
           Register
-        </button>
-      </nav>
+          </button>
+          </a>
+          </nav>
 
       {/* Hero Section */}
       <section className="flex flex-col items-center justify-center text-center py-24 px-4">
@@ -27,9 +29,11 @@ export default function Home() {
           visionaries to build solutions for the next generation.
         </p>
         <div className="flex gap-4">
+          <a href="/register">
           <button className="bg-white text-black px-8 py-4 rounded-xl font-bold hover:bg-slate-200 transition">
             Apply Now
-          </button>
+            </button>
+            </a>
           <button className="bg-slate-800 text-white px-8 py-4 rounded-xl font-bold hover:bg-slate-700 transition border border-slate-700">
             View Tracks
           </button>
