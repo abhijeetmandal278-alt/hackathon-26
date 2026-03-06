@@ -15,7 +15,7 @@ export default function Participants() {
         const { data, error } = await supabase
         .from('registrations')
         .select('*')
-        .order('created_at', { ascending: false })
+        
 
         if (error) {
         console.error("❌ DATABASE ERROR:", error.message);
