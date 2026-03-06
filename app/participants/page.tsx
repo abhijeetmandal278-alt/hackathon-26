@@ -4,27 +4,34 @@ import { useEffect, useState } from 'react'
 
 export default function Participants() {
     const [students, setStudents] = useState<any[]>([])
-  const [searchTerm, setSearchTerm] = useState('') // 1. Added search state
+    const [searchTerm, setSearchTerm] = useState('')
     const [loading, setLoading] = useState(true)
 
     useEffect(() => {
     async function fetchStudents() {
+      // FORCING CONSOLE LOGS HERE
+        console.log("🛠️ FETCH START: Attempting to reach Supabase..."); 
+        
         const { data, error } = await supabase
         .from('registrations')
         .select('*')
         .order('created_at', { ascending: false })
 
-        if (error) console.error('Error:', error)
-        else setStudents(data || [])
+        if (error) {
+        console.error("❌ DATABASE ERROR:", error.message);
+        } else {
+        console.log("✅ DATA RECEIVED:", data); // This shows the names like 'Abhijeet'
+        setStudents(data || [])
+        }
         setLoading(false)
     }
     fetchStudents()
     }, [])
 
-  // 2. Filter students based on search term
+  // Search Logic
     const filteredStudents = students.filter(student =>
-    student.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    student.email.toLowerCase().includes(searchTerm.toLowerCase())
+    (student.name?.toLowerCase() || '').includes(searchTerm.toLowerCase()) ||
+    (student.email?.toLowerCase() || '').includes(searchTerm.toLowerCase())
     )
 
     return (
@@ -35,8 +42,7 @@ export default function Participants() {
             <h1 className="text-4xl font-bold text-indigo-400">Participants</h1>
             <p className="text-slate-400">{students.length} Total Registrations</p>
             </div>
-
-          {/* 3. The Search Input */}
+            
             <input 
             type="text"
             placeholder="Search by name or email..."
@@ -46,7 +52,7 @@ export default function Participants() {
         </div>
 
         {loading ? (
-            <p className="text-slate-400 italic">Loading...</p>
+            <p className="text-slate-400 italic">Loading entries...</p>
         ) : (
             <div className="overflow-hidden rounded-xl border border-slate-700 bg-slate-800">
             <table className="w-full text-left">
@@ -58,7 +64,6 @@ export default function Participants() {
                 </tr>
                 </thead>
                 <tbody className="divide-y divide-slate-700">
-                {/* 4. Map over filteredStudents instead of students */}
                 {filteredStudents.map((student, index) => (
                     <tr key={index} className="hover:bg-slate-700/50 transition">
                     <td className="px-6 py-4 font-medium">{student.name}</td>
@@ -68,8 +73,8 @@ export default function Participants() {
                 ))}
                 </tbody>
             </table>
-            {filteredStudents.length === 0 && (
-                <p className="p-6 text-center text-slate-500">No participants found matching "{searchTerm}"</p>
+            {filteredStudents.length === 0 && !loading && (
+                <p className="p-10 text-center text-slate-500">No participants found.</p>
             )}
             </div>
         )}
