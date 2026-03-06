@@ -6,16 +6,17 @@ export default function Register() {
     const [formData, setFormData] = useState({ name: '', email: '', github: '' })
     const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // This sends your form data to the Supabase table you created
+    
+    // This line specifically sends the data to your 'registrations' table
     const { error } = await supabase.from('registrations').insert([formData])
     
     if (error) {
         alert('Error: ' + error.message)
     } else {
         alert('Success! You are registered for HACK_26.')
-        setFormData({ name: '', email: '', github: '' }) // This clears the form
+      setFormData({ name: '', email: '', github: '' }) // This clears the form boxes
     }
-}
+    }
 
 return (
     <div className="min-h-screen bg-slate-900 text-white flex flex-col items-center justify-center p-4">
@@ -48,8 +49,8 @@ return (
             <button type="submit" className="w-full bg-indigo-600 hover:bg-indigo-500 py-3 rounded-lg font-bold transition duration-200">
             Submit Application
             </button>
-            </div>
-            </form>
-            </div>
-            )
-        }
+        </div>
+        </form>
+    </div>
+    )
+}
