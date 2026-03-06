@@ -1,49 +1,55 @@
+'use client'
+import { supabase } from '../supabase'
+import { useState } from 'react'
+
 export default function Register() {
-    return (
-    <div className="min-h-screen bg-slate-900 text-white flex flex-col items-center justify-center px-4">
-        <div className="w-full max-w-md bg-slate-800 p-8 rounded-2xl border border-slate-700 shadow-xl">
-        <h1 className="text-3xl font-bold mb-2 text-center">Join HACK_26</h1>
-        <p className="text-slate-400 text-center mb-8">Fill in your details to secure your spot.</p>
+    const [formData, setFormData] = useState({ name: '', email: '', github: '' })
+    const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    // This sends the data to your 'registrations' table
+    const { error } = await supabase.from('registrations').insert([formData])
+    
+    if (error) {
+        alert('Error: ' + error.message)
+    } else {
+        alert('Success! You are registered for HACK_26.')
+        setFormData({ name: '', email: '', github: '' }) // Clears the form
+    }
+}
+
+return (
+    <div className="min-h-screen bg-slate-900 text-white flex flex-col items-center justify-center p-4">
+        <form onSubmit={handleSubmit} className="bg-slate-800 p-8 rounded-2xl border border-slate-700 w-full max-w-md">
+        <h1 className="text-3xl font-bold mb-6 text-center text-indigo-400">HACK_26 Signup</h1>
         
-        <form className="space-y-4">
-            <div>
-            <label className="block text-sm font-medium text-slate-300 mb-1">Full Name</label>
-            <input
-            type="text"
-            className="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-            placeholder="Abhijeet Mandal"
+        <div className="space-y-4">
+            <input 
+            placeholder="Full Name" 
+            className="w-full p-3 bg-slate-900 border border-slate-700 rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none"
+            onChange={(e) => setFormData({...formData, name: e.target.value})}
+            value={formData.name}
+            required
             />
-            </div>
-            <div>
-            <label className="block text-sm font-medium text-slate-300 mb-1">College Email</label>
-            <input
-            type="email" 
-            className="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-            placeholder="am5185@srmist.edu.in"
+            <input 
+            placeholder="College Email" 
+            type="email"
+            className="w-full p-3 bg-slate-900 border border-slate-700 rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none"
+            onChange={(e) => setFormData({...formData, email: e.target.value})}
+            value={formData.email}
+            required
             />
-            </div>
-
-            <div>
-            <label className="block text-sm font-medium text-slate-300 mb-1">GitHub Username</label>
-            <input
-            type="text" 
-            className="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-            placeholder="Abhijeet6080"
+            <input 
+            placeholder="GitHub Username" 
+            className="w-full p-3 bg-slate-900 border border-slate-700 rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none"
+            onChange={(e) => setFormData({...formData, github: e.target.value})}
+            value={formData.github}
+            required
             />
-            </div>
-
-            <button 
-            type="submit"
-            className="w-full bg-indigo-600 hover:bg-indigo-500 py-3 rounded-lg font-bold transition mt-4"
-            >
+            <button type="submit" className="w-full bg-indigo-600 hover:bg-indigo-500 py-3 rounded-lg font-bold transition duration-200">
             Submit Application
             </button>
+            </div>
             </form>
-
-        <a href="/" className="block text-center mt-6 text-slate-500 hover:text-white text-sm transition">
-        ← Cancel and return home
-        </a>
-        </div>
-    </div>
-    );
-}
+            </div>
+            )            
+        }
