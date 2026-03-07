@@ -25,7 +25,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center py-24 px-6 relative z-10">
         <div className="inline-block px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 text-sm mb-6">
-          <div className="text-left">
+          <div className="text-left overflow-hidden rounded-3xl">
             <div className="p-8 md:p-12 rounded-3xl bg-indigo-500/5 border border-indigo-500/10 backdrop-blur-sm relative">
           Coming to Dhanbad Jharkhand
         
