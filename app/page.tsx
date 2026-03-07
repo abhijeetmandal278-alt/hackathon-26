@@ -23,8 +23,9 @@ export default function Home() {
           </nav>
 
       {/* Hero Section */}
-      <section className="flex flex-col items-center justify-center text-center py-24 px-4">
+      <section className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center py-24 px-6 relative z-10">
         <div className="inline-block px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 text-sm mb-6">
+          <div className="text-left">
           Coming to Dhanbad Jharkhand
         </div>
         <h1 className="text-6xl md:text-8xl font-extrabold mb-6 bg-linear-to-b from-white to-slate-500 bg-clip-text text-transparent">
@@ -44,6 +45,20 @@ export default function Home() {
             View Tracks
           </button>
         </div>
+        </div>
+        
+        {/* High-Tech Image Visual */}
+      <div className="relative group">
+        <div className="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+        <div className="relative bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-2xl">
+          <img 
+            src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800" 
+            alt="Advanced Tech Visual" 
+            className="w-full h-auto opacity-90 group-hover:scale-105 transition-transform duration-500"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#030712] via-transparent to-transparent"></div>
+        </div>
+      </div>
       </section>
 
       {/* Info Cards */}
