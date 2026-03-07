@@ -80,6 +80,27 @@ export default function Home() {
           <p className="text-slate-400">Grand Prize: ₹50,000 + Internship Opportunities</p>
         </div>
       </section>
+      
+      {/* Tracks Section */}
+      <section id="tracks" className="py-24 bg-[#030712] relative z-10 border-t border-slate-800">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-3xl font-bold text-indigo-400 mb-12 text-center">Hackathon Tracks</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {['AI & Machine Learning', 'Web3 & Blockchain', 'Open Innovation'].map((track) => (
+              <div key={track} className="p-8 rounded-2xl bg-slate-900/50 border border-slate-800 hover:border-indigo-500/50 transition-all group">
+                <div className="w-12 h-12 bg-indigo-500/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-indigo-500/20 transition-colors">
+                  <div className="w-2 h-2 bg-indigo-500 rounded-full"></div>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">{track}</h3>
+                <p className="text-slate-400 text-sm leading-relaxed">
+                  Build the next generation of solutions using cutting-edge {track.toLowerCase()} technologies.
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Footer Section */}
       <footer className="py-12 border-t border-slate-800 bg-[#030712] relative z-10">
         <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
