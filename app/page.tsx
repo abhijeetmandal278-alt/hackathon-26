@@ -42,9 +42,11 @@ export default function Home() {
             Apply Now
             </button>
             </a>
-          <button className="bg-slate-800 text-white px-8 py-4 rounded-xl font-bold hover:bg-slate-700 transition border border-slate-700">
-            View Tracks
-          </button>
+          <a href="#tracks">
+            <button className="bg-slate-800 text-white px-8 py-4 rounded-xl font-bold hover:bg-slate-700 transition border border-slate-700">
+              View Tracks
+              </button>
+              </a>
         </div>
         </div>
         </div>
