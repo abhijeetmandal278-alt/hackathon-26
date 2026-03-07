@@ -23,10 +23,10 @@ export default function Home() {
           </nav>
 
       {/* Hero Section */}
-      <section className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center py-24 px-6 relative z-10 overflow-hidden rounded-3xl opacity-0 animate-reveal-fast">
+      <section className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center py-24 px-6 relative z-10 overflow-hidden rounded-3xl animate-reveal-fast">
         <div className="inline-block px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 text-sm mb-6">
           <div className="text-left overflow-hidden rounded-3xl">
-            <div className="p-8 md:p-12 rounded-3xl bg-white/5 border border-white/5 backdrop-blur-md relative shadow-2xl shadow-indigo-500/10 opacity-0 animate-reveal-slow">
+            <div className="p-8 md:p-12 rounded-3xl bg-white/5 border border-white/5 backdrop-blur-md relative shadow-2xl shadow-indigo-500/10 animate-reveal-slow">
           Coming to Dhanbad Jharkhand
         
         <h1 className="text-6xl md:text-8xl font-extrabold mb-6 bg-linear-to-b from-white to-slate-500 bg-clip-text text-transparent">
