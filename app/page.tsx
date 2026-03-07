@@ -21,7 +21,7 @@ export default function Home() {
         <div className="inline-block px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 text-sm mb-6">
           Coming to Dhanbad Jharkhand
         </div>
-        <h1 className="text-6xl md:text-8xl font-extrabold mb-6 bg-gradient-to-b from-white to-slate-500 bg-clip-text text-transparent">
+        <h1 className="text-6xl md:text-8xl font-extrabold mb-6 bg-linear-to-b from-white to-slate-500 bg-clip-text text-transparent">
           Code the Future.
         </h1>
         <p className="max-w-2xl text-lg text-slate-400 mb-10">
