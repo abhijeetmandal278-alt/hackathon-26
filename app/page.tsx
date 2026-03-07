@@ -41,7 +41,7 @@ export default function Home() {
       </section>
 
       {/* Info Cards */}
-      <section className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 px-6 py-20 border-t border-slate-800">
+      <section id="about" className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 px-6 py-20 border-t border-slate-800">
         <div className="p-8 rounded-2xl bg-slate-800/50 border border-slate-700">
           <h3 className="text-xl font-bold mb-3 text-indigo-400">₹1,00,000+</h3>
           <p className="text-slate-400">In prizes, swag, and internship opportunities for the winning teams.</p>
@@ -53,6 +53,25 @@ export default function Home() {
         <div className="p-8 rounded-2xl bg-slate-800/50 border border-slate-700">
           <h3 className="text-xl font-bold mb-3 text-indigo-400">Any Track</h3>
           <p className="text-slate-400">Whether it is AI, Web3, or Fintech—build what you are passionate about.</p>
+        </div>
+      </section>
+      {/* Schedule Section */}
+      <section id="schedule" className="py-20 bg-slate-800/50 border-y border-slate-800">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h2 className="text-3xl font-bold text-indigo-400 mb-8">Event Schedule</h2>
+          <div className="text-slate-400 space-y-4">
+            <p>🕒 09:00 AM - Opening Ceremony</p>
+            <p>💻 10:00 AM - Hacking Begins</p>
+            <p>🍕 01:00 PM - Lunch Break</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Prizes Section */}
+      <section id="prizes" className="py-20">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h2 className="text-3xl font-bold text-indigo-400 mb-8">Prizes</h2>
+          <p className="text-slate-400">Grand Prize: ₹50,000 + Internship Opportunities</p>
         </div>
       </section>
     </main>
