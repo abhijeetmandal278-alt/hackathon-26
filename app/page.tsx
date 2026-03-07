@@ -26,8 +26,9 @@ export default function Home() {
       <section className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center py-24 px-6 relative z-10">
         <div className="inline-block px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 text-sm mb-6">
           <div className="text-left">
+            <div className="p-8 md:p-12 rounded-3xl bg-indigo-500/5 border border-indigo-500/10 backdrop-blur-sm relative">
           Coming to Dhanbad Jharkhand
-        </div>
+        
         <h1 className="text-6xl md:text-8xl font-extrabold mb-6 bg-linear-to-b from-white to-slate-500 bg-clip-text text-transparent">
           Code the Future
         </h1>
@@ -44,6 +45,8 @@ export default function Home() {
           <button className="bg-slate-800 text-white px-8 py-4 rounded-xl font-bold hover:bg-slate-700 transition border border-slate-700">
             View Tracks
           </button>
+        </div>
+        </div>
         </div>
         </div>
         
