@@ -23,7 +23,7 @@ export default function Home() {
           </nav>
 
       {/* Hero Section */}
-      <section className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center py-24 px-6 relative z-10">
+      <section className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center py-24 px-6 relative z-10 overflow-hidden rounded-3xl">
         <div className="inline-block px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 text-sm mb-6">
           <div className="text-left overflow-hidden rounded-3xl">
             <div className="p-8 md:p-12 rounded-3xl bg-indigo-500/5 border border-indigo-500/10 backdrop-blur-sm relative">
@@ -54,7 +54,7 @@ export default function Home() {
         
         {/* High-Tech Image Visual */}
       <div className="relative group">
-        <div className="absolute -inset-1 bg-linear-to-r from-indigo-500 to-purple-600 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+        <div className="absolute -inset-1 bg-linear-to-r from-indigo-500/20 to-purple-600/20 rounded-2xl blur-xl opacity-10 group-hover:opacity-30 transition duration-1000"></div>
         <div className="relative bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-2xl">
           <img 
             src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800" 
