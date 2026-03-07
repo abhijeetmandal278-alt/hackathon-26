@@ -89,13 +89,13 @@ export default function Home() {
           </div>
           
           <div className="flex gap-8">
-            <a href="https://github.com/Abhijeet6080" target="_blank" className="text-slate-400 hover:text-white transition-colors">
+            <a href="https://github.com/abhijeetmandal278-alt" target="_blank" className="text-slate-400 hover:text-white transition-colors">
               GitHub
             </a>
-            <a href="https://linkedin.com/in/abhijeet" target="_blank" className="text-slate-400 hover:text-white transition-colors">
+            <a href="https://linkedin.com/in/abhijeet-man-429b29385" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors">
               LinkedIn
             </a>
-            <a href="mailto:am5185@srmist.edu.in" className="text-slate-400 hover:text-white transition-colors">
+            <a href="mailto:abhijeetmandal278@gmail.com" className="text-slate-400 hover:text-white transition-colors">
               Contact
             </a>
           </div>
