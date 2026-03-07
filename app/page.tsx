@@ -19,7 +19,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="flex flex-col items-center justify-center text-center py-24 px-4">
         <div className="inline-block px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 text-sm mb-6">
-          Coming to SRMIST Kattankulathur
+          Coming to Dhanbad Jharkhand
         </div>
         <h1 className="text-6xl md:text-8xl font-extrabold mb-6 bg-gradient-to-b from-white to-slate-500 bg-clip-text text-transparent">
           Code the Future.
