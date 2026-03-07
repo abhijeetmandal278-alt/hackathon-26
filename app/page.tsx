@@ -1,8 +1,14 @@
 export default function Home() {
   return (
-    <main className="min-h-screen bg-slate-900 text-white font-sans">
+    <main className="min-h-screen bg-[#030712] text-white font-sans relative overflow-hidden">
+      {/* Advanced Tech Background Pattern */}
+      <div className="absolute inset-0 z-0 opacity-20 pointer-events-none" 
+          style={{ backgroundImage: `radial-gradient(#4f46e5 0.5px, transparent 0.5px)`, backgroundSize: '24px 24px' }}>
+      </div>
+      <div className="absolute inset-0 z-0 bg-[radial-gradient(circle_at_50%_50%,rgba(79,70,229,0.1),transparent_50%)] pointer-events-none">
+      </div>
       {/* Navigation */}
-      <nav className="p-6 flex justify-between items-center max-w-6xl mx-auto">
+      <nav className="p-6 flex justify-between items-center max-w-6xl mx-auto sticky top-0 z-50 bg-[#030712]/80 backdrop-blur-md">
         <h2 className="text-2xl font-bold tracking-tighter">HACK_26</h2>
         <div className="space-x-6 hidden md:block text-slate-400">
           <a href="#about" className="hover:text-white transition">About</a>
@@ -74,6 +80,27 @@ export default function Home() {
           <p className="text-slate-400">Grand Prize: ₹50,000 + Internship Opportunities</p>
         </div>
       </section>
+      {/* Footer Section */}
+      <footer className="py-12 border-t border-slate-800 bg-[#030712] relative z-10">
+        <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+          <div>
+            <h2 className="text-xl font-bold tracking-tighter text-white">HACK_26</h2>
+            <p className="text-slate-500 text-sm mt-1">© 2026 Code the Future. All rights reserved.</p>
+          </div>
+          
+          <div className="flex gap-8">
+            <a href="https://github.com/Abhijeet6080" target="_blank" className="text-slate-400 hover:text-white transition-colors">
+              GitHub
+            </a>
+            <a href="https://linkedin.com/in/abhijeet" target="_blank" className="text-slate-400 hover:text-white transition-colors">
+              LinkedIn
+            </a>
+            <a href="mailto:am5185@srmist.edu.in" className="text-slate-400 hover:text-white transition-colors">
+              Contact
+            </a>
+          </div>
+        </div>
+      </footer>
     </main>
   );
 }
