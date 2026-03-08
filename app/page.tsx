@@ -108,7 +108,9 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             
             {/* AI Track */}
-            <div className="p-8 rounded-2xl bg-slate-900/40 border border-slate-800 hover:border-indigo-500/50 transition-all group">
+            <div className="p-8 rounded-2xl bg-slate-900/40 border border-slate-800 hover:border-indigo-500/50 transition-all group relative overflow-hidden">
+              {/* RGB Glow Layer */}
+              <div className="absolute -inset-0.5 bg-linear-to-r from-cyan-500 via-purple-500 to-pink-500 rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500 pointer-events-none"></div>
               <div className="text-2xl mb-4">🤖</div>
               <h3 className="text-xl font-bold text-white mb-3">AI & Machine Learning</h3>
               <p className="text-slate-400 text-sm leading-relaxed">
@@ -117,7 +119,9 @@ export default function Home() {
             </div>
 
             {/* Web3 Track */}
-            <div className="p-8 rounded-2xl bg-slate-900/40 border border-slate-800 hover:border-indigo-500/50 transition-all group">
+            <div className="p-8 rounded-2xl bg-slate-900/40 border border-slate-800 hover:border-indigo-500/50 transition-all group relative overflow-hidden">
+              {/* RGB Glow Layer */}
+              <div className="absolute -inset-0.5 bg-linear-to-r from-cyan-500 via-purple-500 to-pink-500 rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500 pointer-events-none"></div>
               <div className="text-2xl mb-4">⛓️</div>
               <h3 className="text-xl font-bold text-white mb-3">Web3 & Blockchain</h3>
               <p className="text-slate-400 text-sm leading-relaxed">
@@ -126,7 +130,9 @@ export default function Home() {
             </div>
 
             {/* Open Innovation Track */}
-            <div className="p-8 rounded-2xl bg-slate-900/40 border border-slate-800 hover:border-indigo-500/50 transition-all group">
+            <div className="p-8 rounded-2xl bg-slate-900/40 border border-slate-800 hover:border-indigo-500/50 transition-all group relative overflow-hidden">
+              {/* RGB Glow Layer */}
+              <div className="absolute -inset-0.5 bg-linear-to-r from-cyan-500 via-purple-500 to-pink-500 rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500 pointer-events-none"></div>
               <div className="text-2xl mb-4">💡</div>
               <h3 className="text-xl font-bold text-white mb-3">Open Innovation</h3>
               <p className="text-slate-400 text-sm leading-relaxed">
