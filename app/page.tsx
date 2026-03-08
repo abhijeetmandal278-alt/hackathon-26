@@ -38,12 +38,12 @@ export default function Home() {
         </p>
         <div className="flex gap-4">
           <a href="/register">
-          <button className="bg-white text-black px-8 py-4 rounded-xl font-bold hover:bg-slate-200 transition">
+          <button className="bg-white text-black px-8 py-4 rounded-xl font-bold hover:bg-slate-200 transition-all duration-300 hover:shadow-[0_0_20px_rgba(255,255,255,0.4)]">
             Apply Now
             </button>
             </a>
           <a href="#tracks" className="cursor-pointer">
-            <button className="bg-slate-800 text-white px-8 py-4 rounded-xl font-bold hover:bg-slate-700 transition border border-slate-700">
+            <button className="bg-slate-800 text-white px-8 py-4 rounded-xl font-bold hover:bg-slate-700 transition-all duration-300 border border-slate-700 hover:shadow-[0_0_25px_rgba(99,102,241,0.3)]">
               View Tracks
               </button>
               </a>
