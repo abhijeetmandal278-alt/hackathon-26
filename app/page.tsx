@@ -138,7 +138,45 @@ export default function Home() {
                 The "Wildcard" track. Break boundaries in FinTech, EdTech, or Sustainability. If you have a disruptive idea that doesn't fit a box, build it here.
               </p>
             </div>
+            {/* Prizes Section */}
+<section id="prizes" className="py-24 bg-[#030712] relative overflow-hidden border-t border-slate-800">
+  <div className="max-w-6xl mx-auto px-6">
+    <h2 className="text-3xl font-bold text-white mb-12 text-center">Grand Prizes</h2>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-end">
+      
+      {/* Second Prize - Silver */}
+      <div className="group relative p-8 rounded-2xl bg-slate-900/40 border border-slate-800 transition-all hover:-translate-y-2">
+        <div className="absolute -inset-0.5 bg-slate-400 rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500"></div>
+        <div className="relative z-10 text-center">
+          <div className="text-4xl mb-4">🥈</div>
+          <h3 className="text-xl font-bold text-white mb-2">Runner Up</h3>
+          <p className="text-2xl font-black text-slate-300">₹25,000</p>
+        </div>
+      </div>
 
+      {/* First Prize - Gold */}
+      <div className="group relative p-10 rounded-2xl bg-slate-900/60 border-2 border-amber-500/20 scale-105 transition-all hover:-translate-y-2 shadow-[0_0_30px_rgba(245,158,11,0.05)]">
+        <div className="absolute -inset-1 bg-amber-500 rounded-2xl opacity-10 group-hover:opacity-30 blur-2xl transition-opacity duration-500"></div>
+        <div className="relative z-10 text-center">
+          <div className="text-5xl mb-4">👑</div>
+          <h3 className="text-2xl font-bold text-white mb-2">Overall Winner</h3>
+          <p className="text-4xl font-black text-amber-400">₹50,000</p>
+        </div>
+      </div>
+
+      {/* Third Prize - Bronze */}
+      <div className="group relative p-8 rounded-2xl bg-slate-900/40 border border-slate-800 transition-all hover:-translate-y-2">
+        <div className="absolute -inset-0.5 bg-orange-700 rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500"></div>
+        <div className="relative z-10 text-center">
+          <div className="text-4xl mb-4">🥉</div>
+          <h3 className="text-xl font-bold text-white mb-2">Second Runner Up</h3>
+          <p className="text-2xl font-black text-orange-600">₹10,000</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
           </div>
         </div>
       </section>
