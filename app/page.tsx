@@ -153,13 +153,13 @@ export default function Home() {
           </div>
           
           <div className="flex gap-8">
-            <a href="https://github.com/abhijeetmandal278-alt" target="_blank" className="text-slate-400 hover:text-white transition-colors">
+            <a href="https://github.com/abhijeetmandal278-alt" target="_blank" className="px-4 py-2 rounded-lg text-slate-400 hover:text-white transition-all duration-300 hover:bg-green-500/10 hover:shadow-[0_0_15px_rgba(34,197,94,0.4)] border border-transparent hover:border-green-500/20">
               GitHub
             </a>
-            <a href="https://linkedin.com/in/abhijeet-man-429b29385" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors">
+            <a href="https://linkedin.com/in/abhijeet-man-429b29385" target="_blank" rel="noopener noreferrer" className="px-4 py-2 rounded-lg text-slate-400 hover:text-indigo-400 transition-all duration-300 hover:bg-indigo-500/10 hover:shadow-[0_0_15px_rgba(99,102,241,0.4)] border border-transparent hover:border-indigo-500/20">
               LinkedIn
             </a>
-            <a href="mailto:abhijeetmandal278@gmail.com" className="text-slate-400 hover:text-white transition-colors">
+            <a href="mailto:abhijeetmandal278@gmail.com" className="px-4 py-2 rounded-lg text-slate-400 hover:text-red-400 transition-all duration-300 hover:bg-red-500/10 hover:shadow-[0_0_15px_rgba(239,68,68,0.4)] border border-transparent hover:border-red-500/20">
               Contact
             </a>
           </div>
