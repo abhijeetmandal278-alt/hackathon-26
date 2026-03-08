@@ -16,8 +16,7 @@ export default function Home() {
           <a href="#prizes" className="hover:text-white transition">Prizes</a>
         </div>
         <a href="/register">
-        <button className="bg-indigo-600 hover:bg-indigo-500 px-5 py-2 rounded-lg font-medium transition">
-          Register
+        <button className="bg-indigo-600 text-white px-6 py-2 rounded-xl font-bold hover:bg-indigo-500 transition-all duration-300 hover:shadow-[0_0_20px_rgba(99,102,241,0.6)] animate-pulse">          Register
           </button>
           </a>
           </nav>
