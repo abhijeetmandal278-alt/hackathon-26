@@ -11,9 +11,9 @@ export default function Home() {
       <nav className="p-6 flex justify-between items-center max-w-6xl mx-auto sticky top-0 z-50 bg-[#030712]/80 backdrop-blur-md">
         <h2 className="text-2xl font-bold tracking-tighter">HACK_26</h2>
         <div className="space-x-6 hidden md:block text-slate-400">
-          <a href="#about" className="hover:text-white transition">About</a>
-          <a href="#schedule" className="hover:text-white transition">Schedule</a>
-          <a href="#prizes" className="hover:text-white transition">Prizes</a>
+          <a href="#about" className="px-5 py-2 rounded-xl text-slate-300 transition-all duration-300 hover:text-amber-400 hover:bg-amber-500/10 hover:shadow-[0_0_15px_rgba(245,158,11,0.4)] border border-transparent hover:border-amber-500/20">About</a>
+          <a href="#schedule" className="px-5 py-2 rounded-xl text-slate-300 transition-all duration-300 hover:text-cyan-400 hover:bg-cyan-500/10 hover:shadow-[0_0_15px_rgba(6,182,212,0.4)] border border-transparent hover:border-cyan-500/20">Schedule</a>
+          <a href="#prizes" className="px-5 py-2 rounded-xl text-slate-300 transition-all duration-300 hover:text-fuchsia-400 hover:bg-fuchsia-500/10 hover:shadow-[0_0_15px_rgba(192,38,211,0.4)] border border-transparent hover:border-fuchsia-500/20">Prizes</a>
         </div>
         <a href="/register">
         <button className="bg-indigo-600 text-white px-6 py-2 rounded-xl font-bold hover:bg-indigo-500 transition-all duration-300 hover:shadow-[0_0_20px_rgba(99,102,241,0.6)] animate-pulse">          Register
