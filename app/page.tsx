@@ -139,10 +139,10 @@ export default function Home() {
               </p>
             </div>
             {/* Prizes Section */}
-<section id="prizes" className="py-24 bg-[#030712] relative overflow-hidden border-t border-slate-800">
-  <div className="max-w-6xl mx-auto px-6">
-    <h2 className="text-3xl font-bold text-white mb-12 text-center">Grand Prizes</h2>
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-end">
+            <section id="prizes" className="py-24 bg-[#030712] relative overflow-hidden border-t border-slate-800">
+              <div className="max-w-6xl mx-auto px-6">
+              <h2 className="text-3xl font-bold text-white mb-12 text-center">Grand Prizes</h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-end">
       
       {/* Second Prize - Silver */}
       <div className="group relative p-8 rounded-2xl bg-slate-900/40 border border-slate-800 transition-all hover:-translate-y-2">
@@ -173,13 +173,12 @@ export default function Home() {
           <p className="text-2xl font-black text-orange-600">₹10,000</p>
         </div>
       </div>
-
     </div>
   </div>
-</section>
-          </div>
-        </div>
-      </section>
+  </section>
+  </div>
+  </div>
+  </section>
 
       {/* Footer Section */}
       <footer className="py-12 border-t border-slate-800 bg-[#030712] relative z-10">
