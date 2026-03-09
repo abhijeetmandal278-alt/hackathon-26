@@ -101,84 +101,74 @@ export default function Home() {
       </section>
 
       {/* Detailed Tracks Section */}
-      <section id="tracks" className="py-24 bg-[#030712] relative z-10 border-t border-slate-800">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-indigo-400 mb-12 text-center">Hackathon Tracks</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            
-            {/* AI Track */}
-            <div className="p-8 rounded-2xl bg-slate-900/40 border border-slate-800 hover:border-indigo-500/50 transition-all group relative overflow-hidden">
-              {/* RGB Glow Layer */}
-              <div className="absolute -inset-0.5 bg-linear-to-r from-cyan-500 via-purple-500 to-pink-500 rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500 pointer-events-none"></div>
-              <div className="text-2xl mb-4">🤖</div>
-              <h3 className="text-xl font-bold text-white mb-3">AI & Machine Learning</h3>
-              <p className="text-slate-400 text-sm leading-relaxed">
-                Leverage LLMs, computer vision, or predictive analytics to solve real-world problems. Focus on model efficiency and ethical AI deployment.
-              </p>
-            </div>
+<section id="tracks" className="py-24 bg-[#030712] relative z-10 border-t border-slate-800">
+  <div className="max-w-6xl mx-auto px-6">
+    <h2 className="text-3xl font-bold text-indigo-400 mb-12 text-center">Hackathon Tracks</h2>
 
-            {/* Web3 Track */}
-            <div className="p-8 rounded-2xl bg-slate-900/40 border border-slate-800 hover:border-indigo-500/50 transition-all group relative overflow-hidden">
-              {/* RGB Glow Layer */}
-              <div className="absolute -inset-0.5 bg-linear-to-r from-cyan-500 via-purple-500 to-pink-500 rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500 pointer-events-none"></div>
-              <div className="text-2xl mb-4">⛓️</div>
-              <h3 className="text-xl font-bold text-white mb-3">Web3 & Blockchain</h3>
-              <p className="text-slate-400 text-sm leading-relaxed">
-                Build decentralized applications (dApps) using smart contracts. Explore DeFi, DAO governance, or secure NFT utility across multi-chain ecosystems.
-              </p>
-            </div>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-            {/* Open Innovation Track */}
-            <div className="p-8 rounded-2xl bg-slate-900/40 border border-slate-800 hover:border-indigo-500/50 transition-all group relative overflow-hidden">
-              {/* RGB Glow Layer */}
-              <div className="absolute -inset-0.5 bg-linear-to-r from-cyan-500 via-purple-500 to-pink-500 rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500 pointer-events-none"></div>
-              <div className="text-2xl mb-4">💡</div>
-              <h3 className="text-xl font-bold text-white mb-3">Open Innovation</h3>
-              <p className="text-slate-400 text-sm leading-relaxed">
-                The "Wildcard" track. Break boundaries in FinTech, EdTech, or Sustainability. If you have a disruptive idea that doesn't fit a box, build it here.
-              </p>
-            </div>
-            {/* Prizes Section */}
-            <section id="prizes" className="py-24 bg-[#030712] relative overflow-hidden border-t border-slate-800">
-              <div className="max-w-6xl mx-auto px-6">
-              <h2 className="text-3xl font-bold text-white mb-12 text-center">Grand Prizes</h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-end">
-      
-      {/* Second Prize - Silver */}
-      <div className="group relative p-8 rounded-2xl bg-slate-900/40 border border-slate-800 transition-all hover:-translate-y-2">
-        <div className="absolute -inset-0.5 bg-slate-400 rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500"></div>
-        <div className="relative z-10 text-center">
-          <div className="text-4xl mb-4">🥈</div>
-          <h3 className="text-xl font-bold text-white mb-2">Runner Up</h3>
-          <p className="text-2xl font-black text-slate-300">₹25,000</p>
-        </div>
+      {/* AI Track */}
+      <div className="p-8 rounded-2xl bg-slate-900/40 border border-slate-800 hover:border-indigo-500/50 transition-all group relative overflow-hidden">
+        <div className="absolute -inset-0.5 bg-linear-to-r from-cyan-500 via-purple-500 to-pink-500 rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500 pointer-events-none"></div>
+        <div className="text-2xl mb-4">🤖</div>
+        <h3 className="text-xl font-bold text-white mb-3">AI & Machine Learning</h3>
+        <p className="text-slate-400 text-sm leading-relaxed">
+          Leverage LLMs, computer vision, or predictive analytics to solve real-world problems.
+        </p>
       </div>
 
-      {/* First Prize - Gold */}
-      <div className="group relative p-10 rounded-2xl bg-slate-900/60 border-2 border-amber-500/20 scale-105 transition-all hover:-translate-y-2 shadow-[0_0_30px_rgba(245,158,11,0.05)]">
-        <div className="absolute -inset-1 bg-amber-500 rounded-2xl opacity-10 group-hover:opacity-30 blur-2xl transition-opacity duration-500"></div>
-        <div className="relative z-10 text-center">
-          <div className="text-5xl mb-4">👑</div>
-          <h3 className="text-2xl font-bold text-white mb-2">Overall Winner</h3>
-          <p className="text-4xl font-black text-amber-400">₹50,000</p>
-        </div>
+      {/* Web3 Track */}
+      <div className="p-8 rounded-2xl bg-slate-900/40 border border-slate-800 hover:border-indigo-500/50 transition-all group relative overflow-hidden">
+        <div className="absolute -inset-0.5 bg-linear-to-r from-cyan-500 via-purple-500 to-pink-500 rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500 pointer-events-none"></div>
+        <div className="text-2xl mb-4">⛓️</div>
+        <h3 className="text-xl font-bold text-white mb-3">Web3 & Blockchain</h3>
+        <p className="text-slate-400 text-sm leading-relaxed">
+          Build decentralized applications (dApps) using smart contracts.
+        </p>
       </div>
 
-      {/* Third Prize - Bronze */}
-      <div className="group relative p-8 rounded-2xl bg-slate-900/40 border border-slate-800 transition-all hover:-translate-y-2">
-        <div className="absolute -inset-0.5 bg-orange-700 rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500"></div>
-        <div className="relative z-10 text-center">
-          <div className="text-4xl mb-4">🥉</div>
-          <h3 className="text-xl font-bold text-white mb-2">Second Runner Up</h3>
-          <p className="text-2xl font-black text-orange-600">₹10,000</p>
-        </div>
+      {/* Open Innovation */}
+      <div className="p-8 rounded-2xl bg-slate-900/40 border border-slate-800 hover:border-indigo-500/50 transition-all group relative overflow-hidden">
+        <div className="absolute -inset-0.5 bg-linear-to-r from-cyan-500 via-purple-500 to-pink-500 rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500 pointer-events-none"></div>
+        <div className="text-2xl mb-4">💡</div>
+        <h3 className="text-xl font-bold text-white mb-3">Open Innovation</h3>
+        <p className="text-slate-400 text-sm leading-relaxed">
+          Build anything disruptive in FinTech, EdTech, or Sustainability.
+        </p>
       </div>
+
     </div>
   </div>
-  </section>
+</section>
+
+{/* Prizes Section */}
+<section id="prizes" className="py-24 bg-[#030712] relative overflow-hidden border-t border-slate-800">
+  <div className="max-w-6xl mx-auto px-6">
+    <h2 className="text-3xl font-bold text-white mb-12 text-center">Grand Prizes</h2>
+
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+
+      <div className="group relative p-8 rounded-2xl bg-slate-900/40 border border-slate-800 text-center">
+        <div className="text-4xl mb-4">🥈</div>
+        <h3 className="text-xl font-bold text-white mb-2">Runner Up</h3>
+        <p className="text-2xl font-black text-slate-300">₹25,000</p>
+      </div>
+
+      <div className="group relative p-8 rounded-2xl bg-slate-900/60 border-2 border-amber-500/30 text-center">
+        <div className="text-5xl mb-4">👑</div>
+        <h3 className="text-2xl font-bold text-white mb-2">Overall Winner</h3>
+        <p className="text-4xl font-black text-amber-400">₹50,000</p>
+      </div>
+
+      <div className="group relative p-8 rounded-2xl bg-slate-900/40 border border-slate-800 text-center">
+        <div className="text-4xl mb-4">🥉</div>
+        <h3 className="text-xl font-bold text-white mb-2">Second Runner Up</h3>
+        <p className="text-2xl font-black text-orange-500">₹10,000</p>
+      </div>
+
+    </div>
   </div>
-  </div>
-  </section>
+</section>
 
       {/* Footer Section */}
       <footer className="py-12 border-t border-slate-800 bg-[#030712] relative z-10">
