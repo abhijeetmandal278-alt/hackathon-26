@@ -67,19 +67,26 @@ export default function Home() {
 
       {/* Info Cards */}
       <section id="about" className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 px-6 py-20 border-t border-slate-800">
-        <div className="p-8 rounded-2xl bg-slate-800/50 border border-slate-700">
-          <h3 className="text-xl font-bold mb-3 text-indigo-400">₹1,00,000+</h3>
-          <p className="text-slate-400">In prizes, swag, and internship opportunities for the winning teams.</p>
-        </div>
-        <div className="p-8 rounded-2xl bg-slate-800/50 border border-slate-700">
-          <h3 className="text-xl font-bold mb-3 text-indigo-400">24 Hours</h3>
-          <p className="text-slate-400">Non-stop building, mentoring, and workshops from industry experts.</p>
-        </div>
-        <div className="p-8 rounded-2xl bg-slate-800/50 border border-slate-700">
-          <h3 className="text-xl font-bold mb-3 text-indigo-400">Any Track</h3>
-          <p className="text-slate-400">Whether it is AI, Web3, or Fintech—build what you are passionate about.</p>
-        </div>
-      </section>
+
+        {/* Card 1: Prizes - Indigo Glow */}
+    <div className="p-8 rounded-2xl bg-slate-800/50 border border-slate-700 transition-all duration-300 hover:scale-105 hover:border-indigo-500/50 hover:shadow-[0_0_25px_rgba(99,102,241,0.2)]">
+      <h3 className="text-xl font-bold mb-3 text-indigo-400">₹1,00,000+</h3>
+      <p className="text-slate-400">In prizes, swag, and internship opportunities for the winning teams.</p>
+  </div>
+
+  {/* Card 2: 24 Hours - Cyan Glow */}
+    <div className="p-8 rounded-2xl bg-slate-800/50 border border-slate-700 transition-all duration-300 hover:scale-105 hover:border-cyan-500/50 hover:shadow-[0_0_25px_rgba(6,182,212,0.2)]">
+      <h3 className="text-xl font-bold mb-3 text-cyan-400">24 Hours</h3>
+      <p className="text-slate-400">Non-stop building, mentoring, and workshops from industry experts.</p>
+  </div>
+
+  {/* Card 3: Any Track - Fuchsia Glow */}
+  <div className="p-8 rounded-2xl bg-slate-800/50 border border-slate-700 transition-all duration-300 hover:scale-105 hover:border-fuchsia-500/50 hover:shadow-[0_0_25px_rgba(192,38,211,0.2)]">
+    <h3 className="text-xl font-bold mb-3 text-fuchsia-400">Any Track</h3>
+    <p className="text-slate-400">Whether it is AI, Web3, or Fintech—build what you are passionate about.</p>
+  </div>
+</section>
+
       {/* Schedule Section */}
       <section id="schedule" className="py-20 bg-slate-800/50 border-y border-slate-800">
         <div className="max-w-4xl mx-auto px-6 text-center">
