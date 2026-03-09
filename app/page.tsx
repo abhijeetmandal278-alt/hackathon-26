@@ -31,7 +31,7 @@ export default function Home() {
           <div className="inline-block px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 text-sm mb-6">
             Coming to Dhanbad Jharkhand
           </div>
-          <h1 className="text-6xl md:text-8xl font-extrabold mb-6 bg-gradient-to-b from-white to-slate-500 bg-clip-text text-transparent leading-tight">
+          <h1 className="text-6xl md:text-8xl font-extrabold mb-6 bg-linear-to-b from-white to-slate-500 bg-clip-text text-transparent leading-tight">
             Code the Future
           </h1>
           <p className="max-w-2xl text-lg text-slate-400 mb-10">
@@ -54,14 +54,14 @@ export default function Home() {
         
         {/* High-Tech Image Visual */}
         <div className="relative group">
-          <div className="absolute -inset-1 bg-gradient-to-r from-indigo-500/20 to-purple-600/20 rounded-2xl blur-xl opacity-10 group-hover:opacity-30 transition duration-1000"></div>
+          <div className="absolute -inset-1 bg-linear-to-r from-indigo-500/20 to-purple-600/20 rounded-2xl blur-xl opacity-10 group-hover:opacity-30 transition duration-1000"></div>
           <div className="relative bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-2xl">
             <img 
               src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800" 
               alt="Advanced Tech Visual" 
               className="w-full h-auto opacity-90 group-hover:scale-105 transition-transform duration-500"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#030712] via-transparent to-transparent"></div>
+            <div className="absolute inset-0 bg-linear-to-t from-[#030712] via-transparent to-transparent"></div>
           </div>
         </div>
       </section>
@@ -90,7 +90,7 @@ export default function Home() {
       {/* Event Schedule Section */}
       <section id="schedule" className="py-24 bg-slate-900/50 border-y border-slate-800 relative overflow-hidden">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="text-4xl font-extrabold text-center mb-16 bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">
+          <h2 className="text-4xl font-extrabold text-center mb-16 bg-linear-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">
             Event Schedule
           </h2>
 
@@ -155,7 +155,7 @@ export default function Home() {
       {/* Grand Prizes Section */}
       <section id="prizes" className="py-24 bg-[#030712] relative overflow-hidden border-t border-slate-800">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 bg-clip-text text-transparent">
+          <h2 className="text-4xl font-bold text-center mb-12 bg-linear-to-r from-yellow-400 via-orange-500 to-red-500 bg-clip-text text-transparent">
             Grand Prizes
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
