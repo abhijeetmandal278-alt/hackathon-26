@@ -106,9 +106,10 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Event 2 */}
-            <div className="mb-12 ml-12 md:ml-0 md:w-1/2 md:ml-auto md:pl-12 relative">
-              <div className="absolute -left-[43px] md:-left-[10px] top-1/2 -translate-y-1/2 w-5 h-5 rounded-full bg-cyan-500 shadow-[0_0_15px_rgba(6,182,212,0.5)] border-4 border-slate-900 z-10"></div>
+            {/* Event 2 - Now aligned below the first card */}
+            <div className="mb-12 ml-12 md:ml-0 md:w-1/2 md:pr-12 md:text-right relative">
+              {/* The Dot - repositioned to the right of the text for the left-side alignment */}
+              <div className="absolute -left-[43px] md:-left-auto md:-right-[10px] top-1/2 -translate-y-1/2 w-5 h-5 rounded-full bg-cyan-500 shadow-[0_0_15px_rgba(6,182,212,0.5)] border-4 border-slate-900 z-10"></div>
               <div className="bg-slate-800/40 p-6 rounded-2xl border border-slate-700 hover:border-cyan-500/50 transition-all hover:scale-105">
                 <span className="text-cyan-400 font-mono font-bold text-sm tracking-widest uppercase">10:00 AM</span>
                 <h3 className="text-xl font-bold text-white mt-1">💻 Hacking Begins</h3>
