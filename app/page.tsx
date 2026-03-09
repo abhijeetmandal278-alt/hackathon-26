@@ -89,21 +89,45 @@ export default function Home() {
     <h3 className="text-xl font-bold mb-3 text-fuchsia-400">Any Track</h3>
     <p className="text-slate-400">Whether it is AI, Web3, or Fintech—build what you are passionate about.</p>
   </div>
-
 </section>
 
-      {/* Schedule Section */}
-      <section id="schedule" className="py-20 bg-slate-800/50 border-y border-slate-800">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold text-indigo-400 mb-8">Event Schedule</h2>
-          <div className="text-slate-400 space-y-4">
-            <p>🕒 09:00 AM - Opening Ceremony</p>
-            <p>💻 10:00 AM - Hacking Begins</p>
-            <p>🍕 01:00 PM - Lunch Break</p>
-          </div>
-        </div>
-      </section>
+{/* Event Schedule Section */}
+<section id="schedule" className="py-24 bg-slate-900/50 border-y border-slate-800 relative overflow-hidden">
+  <div className="max-w-4xl mx-auto px-6">
+    <h2 className="text-4xl font-extrabold text-center mb-16 bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">
+      Event Schedule
+    </h2>
 
+    <div className="relative border-l-2 border-slate-800 ml-4 md:ml-0 md:left-1/2">
+      {/* Event 1 */}
+      <div className="mb-10 ml-6 md:ml-0 md:w-1/2 md:pr-12 md:text-right relative">
+        <div className="absolute -left-[31px] md:-left-auto md:-right-[11px] top-1 w-5 h-5 rounded-full bg-indigo-500 shadow-[0_0_15px_rgba(99,102,241,0.5)] border-4 border-slate-900"></div>
+        <div className="bg-slate-800/40 p-6 rounded-2xl border border-slate-700 hover:border-indigo-500/50 transition-all hover:scale-105">
+          <span className="text-indigo-400 font-mono font-bold text-sm tracking-widest uppercase">09:00 AM</span>
+          <h3 className="text-xl font-bold text-white mt-1">🕒 Opening Ceremony</h3>
+        </div>
+      </div>
+
+      {/* Event 2 */}
+      <div className="mb-10 ml-6 md:ml-0 md:w-1/2 md:left-1/2 md:pl-12 relative">
+        <div className="absolute -left-[31px] md:-left-[11px] top-1 w-5 h-5 rounded-full bg-cyan-500 shadow-[0_0_15px_rgba(6,182,212,0.5)] border-4 border-slate-900"></div>
+        <div className="bg-slate-800/40 p-6 rounded-2xl border border-slate-700 hover:border-cyan-500/50 transition-all hover:scale-105">
+          <span className="text-cyan-400 font-mono font-bold text-sm tracking-widest uppercase">10:00 AM</span>
+          <h3 className="text-xl font-bold text-white mt-1">💻 Hacking Begins</h3>
+        </div>
+      </div>
+
+      {/* Event 3 */}
+      <div className="ml-6 md:ml-0 md:w-1/2 md:pr-12 md:text-right relative">
+        <div className="absolute -left-[31px] md:-left-auto md:-right-[11px] top-1 w-5 h-5 rounded-full bg-fuchsia-500 shadow-[0_0_15px_rgba(192,38,211,0.5)] border-4 border-slate-900"></div>
+        <div className="bg-slate-800/40 p-6 rounded-2xl border border-slate-700 hover:border-fuchsia-500/50 transition-all hover:scale-105">
+          <span className="text-fuchsia-400 font-mono font-bold text-sm tracking-widest uppercase">01:00 PM</span>
+          <h3 className="text-xl font-bold text-white mt-1">🍕 Lunch Break</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
       {/* Prizes Section */}
       <section id="prizes" className="py-20">
         <div className="max-w-4xl mx-auto px-6 text-center">
