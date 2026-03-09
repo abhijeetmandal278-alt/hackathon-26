@@ -25,32 +25,38 @@ export default function Home() {
         </a>
       </nav>
 
-      {/* Hero Section */}
-      <section className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center py-24 px-6 relative z-10">
-        <div>
-          <div className="inline-block px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 text-sm mb-6">
-            Coming to Dhanbad Jharkhand
-          </div>
-          <h1 className="text-6xl md:text-8xl font-extrabold mb-6 bg-linear-to-b from-white to-slate-500 bg-clip-text text-transparent leading-tight">
-            Code the Future
-          </h1>
-          <p className="max-w-2xl text-lg text-slate-400 mb-10">
-            A 24-hour sprint of pure creation. Join hundreds of developers, designers, and 
-            visionaries to build solutions for the next generation.
-          </p>
-          <div className="flex gap-4">
-            <a href="/register">
-              <button className="bg-white text-black px-8 py-4 rounded-xl font-bold hover:bg-slate-200 transition-all duration-300 hover:shadow-[0_0_20px_rgba(255,255,255,0.4)]">
-                Apply Now
-              </button>
-            </a>
-            <a href="#tracks">
-              <button className="bg-slate-800 text-white px-8 py-4 rounded-xl font-bold hover:bg-slate-700 transition-all duration-300 border border-slate-700 hover:shadow-[0_0_25px_rgba(99,102,241,0.3)]">
-                View Tracks
-              </button>
-            </a>
-          </div>
-        </div>
+{/* Hero Section - Text Side */}
+<section className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center py-24 px-6 relative z-10">
+  
+  {/* THIS IS THE MISSING PURPLE BOX WRAPPER */}
+  <div className="p-8 md:p-12 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-md relative shadow-2xl shadow-indigo-500/10">
+    
+    <div className="inline-block px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 text-sm mb-6">
+      Coming to Dhanbad Jharkhand
+    </div>
+
+    <h1 className="text-6xl md:text-7xl font-extrabold mb-6 bg-gradient-to-b from-white to-slate-500 bg-clip-text text-transparent leading-tight">
+      Code the Future
+    </h1>
+
+    <p className="max-w-2xl text-lg text-slate-400 mb-10">
+      A 24-hour sprint of pure creation. Join hundreds of developers, designers, and 
+      visionaries to build solutions for the next generation.
+    </p>
+
+    <div className="flex gap-4">
+      <a href="/register">
+        <button className="bg-white text-black px-8 py-4 rounded-xl font-bold hover:bg-slate-200 transition-all duration-300 hover:shadow-[0_0_20px_rgba(255,255,255,0.4)]">
+          Apply Now
+        </button>
+      </a>
+      <a href="#tracks">
+        <button className="bg-slate-800 text-white px-8 py-4 rounded-xl font-bold hover:bg-slate-700 transition-all duration-300 border border-slate-700 hover:shadow-[0_0_25px_rgba(99,102,241,0.3)]">
+          View Tracks
+        </button>
+      </a>
+    </div>
+  </div>
         
         {/* High-Tech Image Visual */}
         <div className="relative group">
