@@ -142,42 +142,50 @@ export default function Home() {
 </section>
 
 {/* Prizes Section */}
-<div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-  {/* Runner Up */}
-  <div className="group relative p-8 rounded-2xl bg-slate-900/40 border border-slate-800 text-center transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(192,192,192,0.6)]">
-    
-    {/* Glow */}
-    <div className="absolute -inset-1 bg-gray-300 rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition duration-500"></div>
-    <div className="relative z-10">
-      <div className="text-4xl mb-4">🥈</div>
-      <h3 className="text-xl font-bold text-white mb-2">Runner Up</h3>
-      <p className="text-2xl font-black text-slate-300">₹25,000</p>
+<section id="prizes" className="py-24 bg-[#030712] relative overflow-hidden border-t border-slate-800">
+
+  <div className="max-w-6xl mx-auto px-6">
+
+    {/* Heading */}
+    <h2 className="text-3xl font-bold text-white mb-12 text-center">
+      Grand Prizes
+    </h2>
+
+    {/* Prize Cards */}
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+
+      {/* Runner Up */}
+      <div className="group relative p-8 rounded-2xl bg-slate-900/40 border border-slate-800 text-center transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(192,192,192,0.6)]">
+        <div className="absolute -inset-1 bg-gray-300 rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition duration-500"></div>
+        <div className="relative z-10">
+          <div className="text-4xl mb-4">🥈</div>
+          <h3 className="text-xl font-bold text-white mb-2">Runner Up</h3>
+          <p className="text-2xl font-black text-slate-300">₹25,000</p>
+        </div>
+      </div>
+
+      {/* Winner */}
+      <div className="group relative p-8 rounded-2xl bg-slate-900/60 border-2 border-amber-500/40 text-center transition-all duration-300 hover:scale-110 hover:shadow-[0_0_40px_rgba(245,158,11,0.8)]">
+        <div className="absolute -inset-1 bg-amber-500 rounded-2xl opacity-10 group-hover:opacity-40 blur-2xl transition duration-500"></div>
+        <div className="relative z-10">
+          <div className="text-5xl mb-4">👑</div>
+          <h3 className="text-2xl font-bold text-white mb-2">Overall Winner</h3>
+          <p className="text-4xl font-black text-amber-400">₹50,000</p>
+        </div>
+      </div>
+
+      {/* Second Runner Up */}
+      <div className="group relative p-8 rounded-2xl bg-slate-900/40 border border-slate-800 text-center transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(249,115,22,0.7)]">
+        <div className="absolute -inset-1 bg-orange-500 rounded-2xl opacity-0 group-hover:opacity-25 blur-xl transition duration-500"></div>
+        <div className="relative z-10">
+          <div className="text-4xl mb-4">🥉</div>
+          <h3 className="text-xl font-bold text-white mb-2">Second Runner Up</h3>
+          <p className="text-2xl font-black text-orange-500">₹10,000</p>
+        </div>
+      </div>
     </div>
   </div>
-
-
-  {/* Overall Winner */}
-  <div className="group relative p-8 rounded-2xl bg-slate-900/60 border-2 border-amber-500/40 text-center transition-all duration-300 hover:scale-110 hover:shadow-[0_0_40px_rgba(245,158,11,0.8)]">
-    {/* Glow */}
-    <div className="absolute -inset-1 bg-amber-500 rounded-2xl opacity-10 group-hover:opacity-40 blur-2xl transition duration-500"></div>
-    <div className="relative z-10">
-      <div className="text-5xl mb-4">👑</div>
-      <h3 className="text-2xl font-bold text-white mb-2">Overall Winner</h3>
-      <p className="text-4xl font-black text-amber-400">₹50,000</p>
-    </div>
-  </div>
-
-  {/* Second Runner Up */}
-  <div className="group relative p-8 rounded-2xl bg-slate-900/40 border border-slate-800 text-center transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(249,115,22,0.7)]">
-    {/* Glow */}
-    <div className="absolute -inset-1 bg-orange-500 rounded-2xl opacity-0 group-hover:opacity-25 blur-xl transition duration-500"></div>
-    <div className="relative z-10">
-      <div className="text-4xl mb-4">🥉</div>
-      <h3 className="text-xl font-bold text-white mb-2">Second Runner Up</h3>
-      <p className="text-2xl font-black text-orange-500">₹10,000</p>
-    </div>
-  </div>
-</div>
+</section>
 
       {/* Footer Section */}
       <footer className="py-12 border-t border-slate-800 bg-[#030712] relative z-10">
