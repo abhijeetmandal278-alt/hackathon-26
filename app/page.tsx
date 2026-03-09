@@ -147,7 +147,7 @@ export default function Home() {
   <div className="max-w-6xl mx-auto px-6">
 
     {/* Heading */}
-    <h2 className="text-3xl font-bold text-white mb-12 text-center">
+    <h2 className="text-4xl font-bold text-center mb-12 bg-linear-to-r from-yellow-400 via-orange-500 to-red-500 bg-clip-text text-transparent">
       Grand Prizes
     </h2>
 
