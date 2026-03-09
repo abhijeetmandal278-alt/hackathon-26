@@ -146,7 +146,8 @@ export default function Home() {
       <div className="group relative p-8 rounded-2xl bg-slate-900/40 border border-slate-800 transition-all duration-300 hover:scale-105 hover:border-indigo-500/50 hover:shadow-[0_0_30px_rgba(99,102,241,0.2)] overflow-hidden">
         {/* THE MISSING GLOW LAYER */}
         <div className="absolute -inset-0.5 bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500 rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500 pointer-events-none"></div>
-        
+        {/* Layer 2: NEW SHINY REFLECTION SWIPE */}
+        <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out pointer-events-none"></div>
         <div className="relative z-10">
           <div className="text-2xl mb-4">🤖</div>
           <h3 className="text-xl font-bold text-white mb-3">AI & Machine Learning</h3>
@@ -160,7 +161,8 @@ export default function Home() {
       <div className="group relative p-8 rounded-2xl bg-slate-900/40 border border-slate-800 transition-all duration-300 hover:scale-105 hover:border-purple-500/50 hover:shadow-[0_0_30px_rgba(168,85,247,0.2)] overflow-hidden">
         {/* THE MISSING GLOW LAYER */}
         <div className="absolute -inset-0.5 bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500 rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500 pointer-events-none"></div>
-        
+        {/* Layer 2: NEW SHINY REFLECTION SWIPE */}
+        <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out pointer-events-none"></div>
         <div className="relative z-10">
           <div className="text-2xl mb-4">⛓️</div>
           <h3 className="text-xl font-bold text-white mb-3">Web3 & Blockchain</h3>
@@ -174,7 +176,8 @@ export default function Home() {
       <div className="group relative p-8 rounded-2xl bg-slate-900/40 border border-slate-800 transition-all duration-300 hover:scale-105 hover:border-pink-500/50 hover:shadow-[0_0_30px_rgba(236,72,153,0.2)] overflow-hidden">
         {/* THE MISSING GLOW LAYER */}
         <div className="absolute -inset-0.5 bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500 rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500 pointer-events-none"></div>
-        
+        {/* Layer 2: NEW SHINY REFLECTION SWIPE */}
+        <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out pointer-events-none"></div>
         <div className="relative z-10">
           <div className="text-2xl mb-4">💡</div>
           <h3 className="text-xl font-bold text-white mb-3">Open Innovation</h3>
