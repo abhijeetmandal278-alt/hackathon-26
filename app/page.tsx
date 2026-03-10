@@ -175,8 +175,8 @@ export default function Home() {
       <div className="group relative p-10 rounded-3xl bg-slate-900/40 backdrop-blur-sm border border-slate-800 transition-all duration-500 hover:scale-105 hover:border-cyan-500/50 hover:shadow-[0_0_40px_rgba(6,182,212,0.3)] cursor-pointer overflow-hidden">
         {/* Unique Cyan Glow */}
         <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-600 via-cyan-500 to-teal-400 rounded-3xl opacity-0 group-hover:opacity-40 blur-2xl transition-opacity duration-500 pointer-events-none"></div>
-        {/* Glass Reflection Swipe */}
-        <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out pointer-events-none"></div>
+        {/* Glass Reflection Swipe - Optimized for Performance */}
+          <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-500 ease-out pointer-events-none transform-gpu"></div>
 
         <div className="relative z-10">
           <div className="text-4xl mb-6 transition-transform group-hover:scale-110 duration-300">🤖</div>
@@ -192,7 +192,7 @@ export default function Home() {
         {/* Unique Purple Glow */}
         <div className="absolute -inset-0.5 bg-gradient-to-r from-indigo-600 via-purple-500 to-pink-500 rounded-3xl opacity-0 group-hover:opacity-40 blur-2xl transition-opacity duration-500 pointer-events-none"></div>
         {/* Glass Reflection Swipe */}
-        <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out pointer-events-none"></div>
+        <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-500 ease-in-out pointer-events-none transform-gpu"></div>
 
         <div className="relative z-10">
           <div className="text-4xl mb-6 transition-transform group-hover:scale-110 duration-300">⛓️</div>
@@ -208,7 +208,7 @@ export default function Home() {
         {/* Unique Amber Glow */}
         <div className="absolute -inset-0.5 bg-gradient-to-r from-yellow-500 via-orange-500 to-red-600 rounded-3xl opacity-0 group-hover:opacity-40 blur-2xl transition-opacity duration-500 pointer-events-none"></div>
         {/* Glass Reflection Swipe */}
-        <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out pointer-events-none"></div>
+        <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-500 ease-in-out pointer-events-none transform-gpu"></div>
 
         <div className="relative z-10">
           <div className="text-4xl mb-6 transition-transform group-hover:scale-110 duration-300">💡</div>
@@ -253,18 +253,18 @@ export default function Home() {
   
   {/* 1. Main Blueprint Grid (40px) */}
   <div className="absolute inset-0 z-0 pointer-events-none" 
-       style={{ 
-         backgroundImage: `linear-gradient(to right, rgba(71, 85, 105, 0.2) 1px, transparent 1px), linear-gradient(to bottom, rgba(71, 85, 105, 0.2) 1px, transparent 1px)`, 
-         backgroundSize: '40px 40px' 
-       }}>
+      style={{ 
+        backgroundImage: `linear-gradient(to right, rgba(71, 85, 105, 0.2) 1px, transparent 1px), linear-gradient(to bottom, rgba(71, 85, 105, 0.2) 1px, transparent 1px)`, 
+        backgroundSize: '40px 40px' 
+      }}>
   </div>
 
   {/* 2. Sub-Grid (10px) */}
   <div className="absolute inset-0 z-0 pointer-events-none" 
-       style={{ 
-         backgroundImage: `linear-gradient(to right, rgba(71, 85, 105, 0.1) 1px, transparent 1px), linear-gradient(to bottom, rgba(71, 85, 105, 0.1) 1px, transparent 1px)`, 
-         backgroundSize: '10px 10px' 
-       }}>
+      style={{ 
+        backgroundImage: `linear-gradient(to right, rgba(71, 85, 105, 0.1) 1px, transparent 1px), linear-gradient(to bottom, rgba(71, 85, 105, 0.1) 1px, transparent 1px)`, 
+        backgroundSize: '10px 10px' 
+      }}>
   </div>
 
   <div className="max-w-4xl mx-auto px-6 relative z-10">
