@@ -177,7 +177,6 @@ export default function Home() {
         <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-600 via-cyan-500 to-teal-400 rounded-3xl opacity-0 group-hover:opacity-40 blur-2xl transition-opacity duration-500 pointer-events-none"></div>
         {/* Glass Reflection Swipe - Optimized for Performance */}
           <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-500 ease-out pointer-events-none transform-gpu"></div>
-
         <div className="relative z-10">
           <div className="text-4xl mb-6 transition-transform group-hover:scale-110 duration-300">🤖</div>
           <h3 className="text-2xl font-bold text-white mb-4">AI & Machine Learning</h3>
@@ -193,7 +192,6 @@ export default function Home() {
         <div className="absolute -inset-0.5 bg-gradient-to-r from-indigo-600 via-purple-500 to-pink-500 rounded-3xl opacity-0 group-hover:opacity-40 blur-2xl transition-opacity duration-500 pointer-events-none"></div>
         {/* Glass Reflection Swipe */}
         <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-500 ease-in-out pointer-events-none transform-gpu"></div>
-
         <div className="relative z-10">
           <div className="text-4xl mb-6 transition-transform group-hover:scale-110 duration-300">⛓️</div>
           <h3 className="text-2xl font-bold text-white mb-4">Web3 & Blockchain</h3>
@@ -326,7 +324,7 @@ export default function Home() {
             <p className="text-slate-500 text-sm mt-1">© 2026 Code the Future. All rights reserved.</p>
           </div>
           <div className="flex gap-8">
-            <a href="https://github.com/abhijeetmandal278-alt" target="_blank" className="px-4 py-2 rounded-lg text-slate-400 hover:text-white transition-all duration-300 hover:bg-green-500/10 hover:shadow-[0_0_15px_rgba(34,197,94,0.4)] border border-transparent hover:border-green-500/20">GitHub</a>
+            <a href="https://github.com/abhijeetmandal278-alt" target="_blank" rel="noopener noreferrer" className="px-4 py-2 rounded-lg text-slate-400 hover:text-green-400 transition-all duration-300 hover:bg-green-500/10 hover:shadow-[0_0_15px_rgba(34,197,94,0.4)] border border-transparent hover:border-green-500/20">GitHub</a>            
             <a href="https://www.linkedin.com/in/abhijeet-mandal-429b29385" target="_blank" rel="noopener noreferrer"className="px-4 py-2 rounded-lg text-slate-400 hover:text-indigo-400 transition-all duration-300 hover:bg-indigo-500/10 hover:shadow-[0_0_15px_rgba(99,102,241,0.4)] border border-transparent hover:border-indigo-500/20">LinkedIn</a>
             <a href="mailto:abhijeetmandal278@gmail.com" className="px-4 py-2 rounded-lg text-slate-400 hover:text-red-400 transition-all duration-300 hover:bg-red-500/10 hover:shadow-[0_0_15px_rgba(239,68,68,0.4)] border border-transparent hover:border-red-500/20">Contact</a>
           </div>
