@@ -20,6 +20,7 @@ const CountUp = ({ end, duration = 2000 }: { end: number; duration?: number }) =
 
   return <span>₹{count.toLocaleString()}</span>;
 };
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#030712] text-white font-sans relative overflow-hidden">
@@ -243,26 +244,27 @@ export default function Home() {
 
       {/* Grand Prizes Section */}
 <section id="prizes" className="py-24 bg-[#030712] relative overflow-hidden border-t border-slate-800">
-  {/* PASTE THE METADATA BLOCK HERE - START */}
-  <div className="absolute top-8 left-8 hidden lg:block opacity-20 pointer-events-none">
-    <p className="font-mono text-[10px] text-cyan-500 uppercase tracking-[0.3em] leading-tight">
-      <span className="animate-pulse text-cyan-400">Status: Verified</span><br />
-      Allocation: Prize_Pool_Main<br />
-      Ref: 0xFF-HACK-2026
-    </p>
-  </div>
+  
+  {/* Technical Metadata Overlays - High Visibility */}
+<div className="absolute top-8 left-8 hidden lg:block z-20 pointer-events-none">
+  <p className="font-mono text-[11px] text-cyan-400 uppercase tracking-[0.3em] leading-tight drop-shadow-[0_0_8px_rgba(34,211,238,0.8)]">
+    <span className="animate-pulse">Status: Verified</span><br />
+    <span className="opacity-80">Allocation: Prize_Pool_Main</span><br />
+    <span className="opacity-80">Ref: 0xFF-HACK-2026</span>
+  </p>
+</div>
 
-  <div className="absolute bottom-8 right-8 hidden lg:block opacity-20 pointer-events-none">
-    <p className="font-mono text-[10px] text-cyan-500 uppercase tracking-[0.3em] text-right">
-      Lat: 23.7957° N<br />
-      Lon: 86.4304° E<br />
-      Loc: DHN_JH_IN
-    </p>
-  </div>
+<div className="absolute bottom-8 right-8 hidden lg:block z-20 pointer-events-none">
+  <p className="font-mono text-[11px] text-cyan-400 uppercase tracking-[0.3em] text-right leading-tight drop-shadow-[0_0_8px_rgba(34,211,238,0.8)]">
+    <span className="opacity-80">Lat: 23.7957° N</span><br />
+    <span className="opacity-80">Lon: 86.4304° E</span><br />
+    <span className="opacity-80">Loc: DHN_JH_IN</span>
+  </p>
+</div>
   {/* PASTE THE METADATA BLOCK HERE - END */}
   
-  {/* Radar Scanning Line */}
-  <div className="absolute left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-cyan-500/40 to-transparent animate-scan pointer-events-none z-0"></div>
+  {/* Radar Scanning Line - High Visibility Version */}
+<div className="absolute left-0 w-full h-[3px] animate-scan pointer-events-none z-10 bg-gradient-to-r from-transparent via-cyan-400 to-transparent shadow-[0_0_15px_rgba(34,211,238,0.8)] opacity-100"></div>
   
   <div className="max-w-6xl mx-auto px-6">
     {/* Heading */}
