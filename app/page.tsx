@@ -136,15 +136,23 @@ export default function Home() {
       </section>
 
       {/* Detailed Tracks Section */}
-<section id="tracks" className="py-24 bg-[#030712] relative z-10 border-t border-slate-800">
-  <div className="max-w-7xl mx-auto px-6"> {/* Increased from 6xl to 7xl for bigger cards */}
+<section id="tracks" className="py-24 bg-[#030712] relative z-10 border-t border-slate-800 overflow-hidden">
+  
+  {/* NEW: Blueprint Grid Overlay */}
+  <div className="absolute inset-0 z-0 opacity-20 pointer-events-none" 
+       style={{ 
+         backgroundImage: `linear-gradient(to right, #1e293b 1px, transparent 1px), linear-gradient(to bottom, #1e293b 1px, transparent 1px)`, 
+         backgroundSize: '40px 40px' 
+       }}>
+  </div>
+
+  <div className="max-w-7xl mx-auto px-6 relative z-10">
     <h2 className="text-4xl font-extrabold text-indigo-400 mb-16 text-center tracking-tight">
       Hackathon Tracks
     </h2>
 
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-8"> {/* Increased gap to 8 for better spacing */}
-
-      {/* 1. AI Track */}
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {/* AI Track */}
       <div className="group relative p-10 rounded-3xl bg-slate-900/40 border border-slate-800 transition-all duration-300 hover:scale-105 hover:border-cyan-500/50 hover:shadow-[0_0_30px_rgba(6,182,212,0.3)] overflow-hidden">
         <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-600 via-cyan-500 to-teal-400 rounded-3xl opacity-0 group-hover:opacity-30 blur-xl transition-opacity duration-500 pointer-events-none"></div>
         <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out pointer-events-none"></div>
@@ -157,7 +165,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* 2. Web3 Track */}
+      {/* Web3 Track */}
       <div className="group relative p-10 rounded-3xl bg-slate-900/40 border border-slate-800 transition-all duration-300 hover:scale-105 hover:border-purple-500/50 hover:shadow-[0_0_30px_rgba(168,85,247,0.3)] overflow-hidden">
         <div className="absolute -inset-0.5 bg-gradient-to-r from-indigo-600 via-purple-500 to-pink-500 rounded-3xl opacity-0 group-hover:opacity-30 blur-xl transition-opacity duration-500 pointer-events-none"></div>
         <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out pointer-events-none"></div>
@@ -170,7 +178,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* 3. Open Innovation */}
+      {/* Open Innovation */}
       <div className="group relative p-10 rounded-3xl bg-slate-900/40 border border-slate-800 transition-all duration-300 hover:scale-105 hover:border-amber-500/50 hover:shadow-[0_0_30px_rgba(245,158,11,0.3)] overflow-hidden">
         <div className="absolute -inset-0.5 bg-gradient-to-r from-yellow-500 via-orange-500 to-red-600 rounded-3xl opacity-0 group-hover:opacity-30 blur-xl transition-opacity duration-500 pointer-events-none"></div>
         <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out pointer-events-none"></div>
@@ -182,7 +190,6 @@ export default function Home() {
           </p>
         </div>
       </div>
-
     </div>
   </div>
 </section>
