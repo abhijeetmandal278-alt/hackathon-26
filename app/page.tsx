@@ -222,46 +222,30 @@ export default function Home() {
 </section>
 
       {/* Grand Prizes Section */}
-<section id="prizes" className="py-24 bg-[#030712] relative overflow-hidden border-t border-slate-800">
-  <div className="max-w-6xl mx-auto px-6">
-    {/* Section Title */}
-    <h2 className="text-4xl font-extrabold text-center mb-16 bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 bg-clip-text text-transparent tracking-tight">
-      Grand Prizes
-    </h2>
-
-    {/* Prizes Grid */}
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-      
-      {/* 1st Place - Silver Glow */}
-      <div className="group relative p-10 rounded-3xl bg-slate-900/40 border border-slate-800 text-center transition-all duration-300 hover:scale-105 hover:border-slate-400/50 hover:shadow-[0_0_30px_rgba(203,213,225,0.2)]">
-        <div className="text-5xl mb-4">🥈</div>
-        <h3 className="text-2xl font-bold text-white mb-2">Runner Up</h3>
-        <p className="text-3xl font-black text-slate-300">₹25,000</p>
-      </div>
-
-      {/* Overall Winner Card */}
-      <div className="group relative p-12 rounded-3xl bg-slate-900/60 border-2 border-amber-500/50 text-center transition-all duration-300 scale-110 shadow-[0_0_30px_rgba(245,158,11,0.3)] hover:shadow-[0_0_45px_rgba(245,158,11,0.5)] z-20">
-        {/* The Crown Emoji - Sharp and clear */}
-        <div className="text-7xl mb-6 drop-shadow-md">👑</div>
-        <h3 className="text-3xl font-bold text-white mb-2">Overall Winner</h3>
-        {/* The Prize Amount */}
-        <p className="text-5xl font-black text-amber-400">
-        ₹50,000
-        </p>
-        {/* Internal glow ONLY (Optional - if you want a subtle light behind the text) */}
-        <div className="absolute inset-0 bg-amber-500/5 rounded-3xl pointer-events-none"></div>
+      <section id="prizes" className="py-24 bg-[#030712] relative overflow-hidden border-t border-slate-800">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-4xl font-bold text-center mb-12 bg-linear-to-r from-yellow-400 via-orange-500 to-red-500 bg-clip-text text-transparent">
+            Grand Prizes
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+            <div className="group relative p-8 rounded-2xl bg-slate-900/40 border border-slate-800 text-center transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(192,192,192,0.6)]">
+              <div className="text-4xl mb-4">🥈</div>
+              <h3 className="text-xl font-bold text-white mb-2">Runner Up</h3>
+              <p className="text-2xl font-black text-slate-300">₹25,000</p>
+            </div>
+            <div className="group relative p-8 rounded-2xl bg-slate-900/60 border-2 border-amber-500/40 text-center transition-all duration-300 hover:scale-110 hover:shadow-[0_0_40px_rgba(245,158,11,0.8)]">
+              <div className="text-5xl mb-4">👑</div>
+              <h3 className="text-2xl font-bold text-white mb-2">Overall Winner</h3>
+              <p className="text-4xl font-black text-amber-400">₹50,000</p>
+            </div>
+            <div className="group relative p-8 rounded-2xl bg-slate-900/40 border border-slate-800 text-center transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(249,115,22,0.7)]">
+              <div className="text-4xl mb-4">🥉</div>
+              <h3 className="text-xl font-bold text-white mb-2">Second Runner Up</h3>
+              <p className="text-2xl font-black text-orange-500">₹10,000</p>
+            </div>
+          </div>
         </div>
-
-      {/* 2nd Place - Bronze Glow */}
-      <div className="group relative p-10 rounded-3xl bg-slate-900/40 border border-slate-800 text-center transition-all duration-300 hover:scale-105 hover:border-orange-700/50 hover:shadow-[0_0_30px_rgba(194,65,12,0.2)]">
-        <div className="text-5xl mb-4">🥉</div>
-        <h3 className="text-2xl font-bold text-white mb-2">2nd Runner Up</h3>
-        <p className="text-3xl font-black text-orange-500">₹10,000</p>
-      </div>
-    </div>
-  </div>
-</section>
-
+      </section>
       {/* FAQ Section */}
 <section id="faq" className="py-24 bg-[#030712] relative z-10 border-t border-slate-800 overflow-hidden">
   
