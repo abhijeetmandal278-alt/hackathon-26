@@ -239,22 +239,18 @@ export default function Home() {
         <p className="text-3xl font-black text-slate-300">₹25,000</p>
       </div>
 
-      {/* OVERALL WINNER - Toned Down Glow */}
-      <div className="group relative p-12 rounded-3xl bg-slate-900/60 border-2 border-amber-500/40 text-center transition-all duration-300 hover:scale-110
-                   {/* CHANGED: Decreased blur value from ~60px to 35px */}
-                  hover:shadow-[0_0_35px_rgba(245,158,11,0.5)]">
-        
-        {/* Subtle Background Radial Glow */}
-        <div className="absolute inset-0 rounded-3xl bg-amber-500/5 blur-3xl -z-10"></div>
-
-        <div className="text-7xl mb-6">👑</div>
+      {/* Overall Winner Card */}
+      <div className="group relative p-12 rounded-3xl bg-slate-900/60 border-2 border-amber-500/50 text-center transition-all duration-300 scale-110 shadow-[0_0_30px_rgba(245,158,11,0.3)] hover:shadow-[0_0_45px_rgba(245,158,11,0.5)] z-20">
+        {/* The Crown Emoji - Sharp and clear */}
+        <div className="text-7xl mb-6 drop-shadow-md">👑</div>
         <h3 className="text-3xl font-bold text-white mb-2">Overall Winner</h3>
-        
-        {/* CHANGED: Swapped drop-shadow for a cleaner gradient effect */}
-        <p className="text-5xl font-black bg-gradient-to-b from-amber-300 to-amber-500 bg-clip-text text-transparent">
-          ₹50,000
+        {/* The Prize Amount */}
+        <p className="text-5xl font-black text-amber-400">
+        ₹50,000
         </p>
-      </div>
+        {/* Internal glow ONLY (Optional - if you want a subtle light behind the text) */}
+        <div className="absolute inset-0 bg-amber-500/5 rounded-3xl pointer-events-none"></div>
+        </div>
 
       {/* 2nd Place - Bronze Glow */}
       <div className="group relative p-10 rounded-3xl bg-slate-900/40 border border-slate-800 text-center transition-all duration-300 hover:scale-105 hover:border-orange-700/50 hover:shadow-[0_0_30px_rgba(194,65,12,0.2)]">
