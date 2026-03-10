@@ -7,7 +7,7 @@ export default function Thanks() {
         <p className="text-slate-300 text-lg">
             Thanks for registering for <span className="text-white font-mono">HACK_26</span>.
         </p>
-        <p className="mt-4 text-sm text-slate-500">Check your SRM email for updates soon.</p>
+        <p className="mt-4 text-sm text-slate-500">Registration verified. Check your email for event access codes.</p>
         <a 
         href="/" 
         className="inline-block mt-8 text-indigo-400 hover:text-indigo-300 underline font-medium"
