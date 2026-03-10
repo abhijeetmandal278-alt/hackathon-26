@@ -138,12 +138,26 @@ export default function Home() {
       {/* Detailed Tracks Section */}
 <section id="tracks" className="py-24 bg-[#030712] relative z-10 border-t border-slate-800 overflow-hidden">
   
-  {/* NEW: Blueprint Grid Overlay */}
-  <div className="absolute inset-0 z-0 opacity-20 pointer-events-none" 
-       style={{ 
-         backgroundImage: `linear-gradient(to right, #1e293b 1px, transparent 1px), linear-gradient(to bottom, #1e293b 1px, transparent 1px)`, 
-         backgroundSize: '40px 40px' 
-       }}>
+  {/* BOLD BLUEPRINT GRID */}
+  <div className="absolute inset-0 z-0 pointer-events-none" 
+      style={{ 
+        backgroundImage: `
+          linear-gradient(to right, rgba(71, 85, 105, 0.2) 1px, transparent 1px), 
+          linear-gradient(to bottom, rgba(71, 85, 105, 0.2) 1px, transparent 1px)
+        `, 
+        backgroundSize: '40px 40px' 
+      }}>
+  </div>
+
+  {/* SUB-GRID (Smaller lines for that engineering look) */}
+  <div className="absolute inset-0 z-0 pointer-events-none" 
+      style={{ 
+        backgroundImage: `
+          linear-gradient(to right, rgba(71, 85, 105, 0.1) 1px, transparent 1px), 
+          linear-gradient(to bottom, rgba(71, 85, 105, 0.1) 1px, transparent 1px)
+        `, 
+        backgroundSize: '10px 10px' 
+      }}>
   </div>
 
   <div className="max-w-7xl mx-auto px-6 relative z-10">
