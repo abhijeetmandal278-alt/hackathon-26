@@ -1,4 +1,24 @@
+import { useState, useEffect } from 'react';
 import { Trophy, Clock, Layers } from 'lucide-react';
+
+const CountUp = ({ end, duration = 2000 }: { end: number, duration?: number }) => {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    let startTimestamp: number | null = null;
+    const step = (timestamp: number) => {
+      if (!startTimestamp) startTimestamp = timestamp;
+      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+      setCount(Math.floor(progress * end));
+      if (progress < 1) {
+        window.requestAnimationFrame(step);
+      }
+    };
+    window.requestAnimationFrame(step);
+  }, [end, duration]);
+
+  return <span>₹{count.toLocaleString()}</span>;
+};
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#030712] text-white font-sans relative overflow-hidden">
@@ -222,6 +242,27 @@ export default function Home() {
 
       {/* Grand Prizes Section */}
 <section id="prizes" className="py-24 bg-[#030712] relative overflow-hidden border-t border-slate-800">
+  {/* PASTE THE METADATA BLOCK HERE - START */}
+  <div className="absolute top-8 left-8 hidden lg:block opacity-20 pointer-events-none">
+    <p className="font-mono text-[10px] text-cyan-500 uppercase tracking-[0.3em] leading-tight">
+      <span className="animate-pulse text-cyan-400">Status: Verified</span><br />
+      Allocation: Prize_Pool_Main<br />
+      Ref: 0xFF-HACK-2026
+    </p>
+  </div>
+
+  <div className="absolute bottom-8 right-8 hidden lg:block opacity-20 pointer-events-none">
+    <p className="font-mono text-[10px] text-cyan-500 uppercase tracking-[0.3em] text-right">
+      Lat: 23.7957° N<br />
+      Lon: 86.4304° E<br />
+      Loc: DHN_JH_IN
+    </p>
+  </div>
+  {/* PASTE THE METADATA BLOCK HERE - END */}
+  
+  {/* Radar Scanning Line */}
+  <div className="absolute left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-cyan-500/40 to-transparent animate-scan pointer-events-none z-0"></div>
+  
   <div className="max-w-6xl mx-auto px-6">
     {/* Heading */}
     <h2 className="text-4xl font-black text-white mb-16 text-center tracking-tight">
@@ -238,7 +279,9 @@ export default function Home() {
         <div className="relative z-10">
           <div className="text-5xl mb-4 transition-transform group-hover:scale-110">🥈</div>
           <h3 className="text-xl font-bold text-white mb-2">Runner Up</h3>
-          <p className="text-3xl font-black text-slate-300">₹25,000</p>
+          <p className="text-2xl font-black text-slate-300">
+            <CountUp end={25000} />
+            </p>
         </div>
       </div>
 
@@ -248,7 +291,9 @@ export default function Home() {
     {/* Emoji - slightly smaller to match size */}
           <div className="text-6xl mb-4 transition-transform group-hover:scale-110">👑</div>
           <h3 className="text-2xl font-bold text-white mb-2 tracking-tight">Overall Winner</h3>
-          <p className="text-4xl font-black text-amber-400 drop-shadow-[0_0_15px_rgba(245,158,11,0.4)]">₹50,000</p>
+          <p className="text-4xl font-black text-amber-400 drop-shadow-[0_0_15px_rgba(245,158,11,0.4)]">
+            <CountUp end={50000} />
+            </p>
         </div>
       </div>
 
@@ -257,7 +302,9 @@ export default function Home() {
         <div className="relative z-10">
           <div className="text-5xl mb-4 transition-transform group-hover:scale-110">🥉</div>
           <h3 className="text-xl font-bold text-white mb-2">Second Runner Up</h3>
-          <p className="text-3xl font-black text-orange-500">₹10,000</p>
+          <p className="text-3xl font-black text-orange-500">
+      <CountUp end={10000} />
+    </p>
         </div>
       </div>
     </div>
