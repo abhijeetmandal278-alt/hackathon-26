@@ -242,14 +242,13 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Overall Winner - Gold Glow (The Centerpiece) */}
-      <div className="group relative p-12 rounded-3xl bg-slate-900/60 border-2 border-amber-500/30 text-center transition-all duration-500 scale-110 z-20 hover:border-amber-400 hover:shadow-[0_0_50px_rgba(245,158,11,0.6)]">
+      {/* Overall Winner - Tighter, matching the right image */}
+      <div className="group relative p-10 rounded-3xl bg-slate-900/60 border-2 border-amber-500/50 text-center transition-all duration-300 scale-105 z-20 shadow-[0_0_30px_rgba(245,158,11,0.4)] hover:shadow-[0_0_50px_rgba(245,158,11,0.6)]">
         <div className="relative z-10">
-          <div className="text-7xl mb-6 drop-shadow-lg transition-transform group-hover:scale-110">👑</div>
-          <h3 className="text-3xl font-bold text-white mb-2 tracking-tight">Overall Winner</h3>
-          <p className="text-5xl font-black text-amber-400 drop-shadow-[0_0_15px_rgba(245,158,11,0.4)]">
-            ₹50,000
-          </p>
+    {/* Emoji - slightly smaller to match size */}
+          <div className="text-6xl mb-4 transition-transform group-hover:scale-110">👑</div>
+          <h3 className="text-2xl font-bold text-white mb-2 tracking-tight">Overall Winner</h3>
+          <p className="text-4xl font-black text-amber-400 drop-shadow-[0_0_15px_rgba(245,158,11,0.4)]">₹50,000</p>
         </div>
       </div>
 
