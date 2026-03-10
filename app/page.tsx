@@ -1,7 +1,8 @@
+"use client";
 import { useState, useEffect } from 'react';
 import { Trophy, Clock, Layers } from 'lucide-react';
 
-const CountUp = ({ end, duration = 2000 }: { end: number, duration?: number }) => {
+const CountUp = ({ end, duration = 2000 }: { end: number; duration?: number }) => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
