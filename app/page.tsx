@@ -1,5 +1,4 @@
 import { Trophy, Clock, Layers } from 'lucide-react';
-
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#030712] text-white font-sans relative overflow-hidden">
@@ -35,7 +34,7 @@ export default function Home() {
       Coming to Dhanbad Jharkhand
     </div>
 
-    <h1 className="text-6xl md:text-7xl font-extrabold mb-6 bg-gradient-to-b from-white to-slate-500 bg-clip-text text-transparent leading-tight">
+    <h1 className="text-6xl md:text-8xl font-extrabold mb-6 bg-gradient-to-r from-indigo-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent animate-gradient">
       Code the Future
     </h1>
 
@@ -46,8 +45,8 @@ export default function Home() {
 
     <div className="flex gap-4">
       <a href="/register">
-        <button className="bg-white text-black px-8 py-4 rounded-xl font-bold hover:bg-slate-200 transition-all duration-300 hover:shadow-[0_0_20px_rgba(255,255,255,0.4)]">
-          Apply Now
+        <button className="bg-gradient-to-r from-indigo-500 to-purple-500 px-8 py-4 rounded-xl font-bold hover:scale-105 transition-all duration-300 hover:shadow-[0_0_30px_rgba(99,102,241,0.8)]">
+        Apply Now
         </button>
       </a>
       <a href="#tracks">
@@ -233,10 +232,13 @@ export default function Home() {
               <h3 className="text-xl font-bold text-white mb-2">Runner Up</h3>
               <p className="text-2xl font-black text-slate-300">₹25,000</p>
             </div>
-            <div className="group relative p-8 rounded-2xl bg-slate-900/60 border-2 border-amber-500/40 text-center transition-all duration-300 hover:scale-110 hover:shadow-[0_0_40px_rgba(245,158,11,0.8)]">
-              <div className="text-5xl mb-4">👑</div>
+            <div className="group relative p-10 rounded-2xl bg-slate-900/60 border-2 border-yellow-400 text-center transition-all duration-500 hover:scale-110 hover:shadow-[0_0_60px_rgba(255,215,0,0.9)]">
+            <div className="absolute -inset-2 bg-yellow-400 rounded-2xl blur-2xl opacity-10 group-hover:opacity-40 transition duration-500"></div>
+              <div className="relative z-10">
+              <div className="text-6xl mb-4">👑</div>
               <h3 className="text-2xl font-bold text-white mb-2">Overall Winner</h3>
-              <p className="text-4xl font-black text-amber-400">₹50,000</p>
+            <p className="text-4xl font-black text-yellow-400">₹50,000</p>
+            </div>
             </div>
             <div className="group relative p-8 rounded-2xl bg-slate-900/40 border border-slate-800 text-center transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(249,115,22,0.7)]">
               <div className="text-4xl mb-4">🥉</div>
