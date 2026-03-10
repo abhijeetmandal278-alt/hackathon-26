@@ -116,13 +116,33 @@ export default function Home() {
 
       {/* Event Schedule Section */}
       <section id="schedule" className="py-24 bg-slate-900/50 border-y border-slate-800 relative overflow-hidden">
+        {/* --- PASTE BLOCKS START --- */}
+  {/* 1. Background Grid Pattern */}
+  <div className="absolute inset-0 z-0 opacity-10 pointer-events-none" 
+      style={{ backgroundImage: `radial-gradient(#4f46e5 0.5px, transparent 0.5px)`, backgroundSize: '40px 40px' }}>
+  </div>
+
+  {/* 2. Side Ghost Text (Pinned to screen edges) */}
+  <div className="absolute top-0 left-4 h-full hidden lg:flex flex-col justify-around text-9xl font-black text-slate-800/10 select-none pointer-events-none tracking-tighter uppercase [writing-mode:vertical-lr] rotate-180">
+    <span>Timeline</span>
+    <span>Schedule</span>
+  </div>
+  
+  <div className="absolute top-0 right-4 h-full hidden lg:flex flex-col justify-around text-9xl font-black text-slate-800/10 select-none pointer-events-none tracking-tighter uppercase [writing-mode:vertical-lr]">
+    <span>Hacking</span>
+    <span>Innovate</span>
+  </div>
+  {/* --- PASTE BLOCKS END --- */}
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="text-4xl font-extrabold text-center mb-16 bg-linear-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">
-            Event Schedule
+          <h2 className="text-4xl font-extrabold text-center mb-16 bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent drop-shadow-[0_0_15px_rgba(129,140,248,0.4)]">
+          Event Schedule
           </h2>
 
           <div className="relative max-w-4xl mx-auto">
-            <div className="absolute left-4 md:left-1/2 md:-translate-x-1/2 h-full w-0.5 bg-slate-800"></div>
+            <div className="absolute left-4 md:left-1/2 md:-translate-x-1/2 h-full w-0.5 bg-slate-800">
+          {/* Add this pulse div inside the line */}
+          <div className="absolute top-0 left-0 w-full h-40 bg-gradient-to-b from-transparent via-cyan-400 to-transparent animate-scan shadow-[0_0_20px_rgba(34,211,238,0.5)]"></div>
+          </div>
 
             {/* Event 1 */}
             <div className="mb-12 ml-12 md:ml-0 md:w-1/2 md:pr-12 md:text-right relative">
