@@ -232,14 +232,19 @@ export default function Home() {
               <h3 className="text-xl font-bold text-white mb-2">Runner Up</h3>
               <p className="text-2xl font-black text-slate-300">₹25,000</p>
             </div>
-            <div className="group relative p-10 rounded-2xl bg-slate-900/60 border-2 border-yellow-400 text-center transition-all duration-500 hover:scale-110 hover:shadow-[0_0_60px_rgba(255,215,0,0.9)]">
-            <div className="absolute -inset-2 bg-yellow-400 rounded-2xl blur-2xl opacity-10 group-hover:opacity-40 transition duration-500"></div>
-              <div className="relative z-10">
-              <div className="text-6xl mb-4">👑</div>
-              <h3 className="text-2xl font-bold text-white mb-2">Overall Winner</h3>
-            <p className="text-4xl font-black text-yellow-400">₹50,000</p>
-            </div>
-            </div>
+            {/* Overall Winner Card */}
+            <div className="group relative p-12 rounded-3xl bg-slate-900/60 border-2 border-amber-500/50 text-center transition-all duration-300 scale-110 z-20 
+             {/* REDUCED GLOW: Changed 60px/80px to a sharper 30px with lower opacity */}
+            shadow-[0_0_30px_rgba(245,158,11,0.3)] 
+            hover:shadow-[0_0_45px_rgba(245,158,11,0.4)]">
+              <div className="text-7xl mb-6 drop-shadow-md">👑</div>
+              <h3 className="text-3xl font-bold text-white mb-2">Overall Winner</h3>
+              {/* The Prize Amount */}
+              <p className="text-5xl font-black text-amber-400">₹50,000</p>
+              {/* NEW: Subtle Internal Glow only (Optional) */}
+              {/* This makes the card look lit from inside without bleeding outside */}
+              <div className="absolute inset-0 bg-amber-500/5 rounded-3xl pointer-events-none"></div>\
+              </div>
             <div className="group relative p-8 rounded-2xl bg-slate-900/40 border border-slate-800 text-center transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(249,115,22,0.7)]">
               <div className="text-4xl mb-4">🥉</div>
               <h3 className="text-xl font-bold text-white mb-2">Second Runner Up</h3>
