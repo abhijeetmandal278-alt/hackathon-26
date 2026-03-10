@@ -30,9 +30,9 @@ export default function Home() {
   {/* THIS IS THE MISSING PURPLE BOX WRAPPER */}
   <div className="p-8 md:p-12 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-md relative shadow-2xl shadow-indigo-500/10">
     
-    <div className="inline-block px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 text-sm mb-6">
-      Coming to Dhanbad Jharkhand
-    </div>
+    <p className="inline-block mb-6 px-4 py-1 text-sm font-semibold bg-gradient-to-r from-indigo-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent animate-gradient border border-indigo-500/20 rounded-full">
+    Coming to Dhanbad Jharkhand
+    </p>
 
     <h1 className="text-6xl md:text-8xl font-extrabold mb-6 bg-gradient-to-r from-indigo-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent animate-gradient">
       Code the Future
