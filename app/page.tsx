@@ -248,6 +248,75 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* FAQ Section */}
+<section id="faq" className="py-24 bg-[#030712] relative z-10 border-t border-slate-800 overflow-hidden">
+  
+  {/* 1. Main Blueprint Grid (40px) */}
+  <div className="absolute inset-0 z-0 pointer-events-none" 
+       style={{ 
+         backgroundImage: `linear-gradient(to right, rgba(71, 85, 105, 0.2) 1px, transparent 1px), linear-gradient(to bottom, rgba(71, 85, 105, 0.2) 1px, transparent 1px)`, 
+         backgroundSize: '40px 40px' 
+       }}>
+  </div>
+
+  {/* 2. Sub-Grid (10px) */}
+  <div className="absolute inset-0 z-0 pointer-events-none" 
+       style={{ 
+         backgroundImage: `linear-gradient(to right, rgba(71, 85, 105, 0.1) 1px, transparent 1px), linear-gradient(to bottom, rgba(71, 85, 105, 0.1) 1px, transparent 1px)`, 
+         backgroundSize: '10px 10px' 
+       }}>
+  </div>
+
+  <div className="max-w-4xl mx-auto px-6 relative z-10">
+    
+    {/* Neon Section Header */}
+    <div className="text-center mb-16">
+      <h2 className="text-4xl md:text-5xl font-black mb-6">
+        <span className="bg-gradient-to-r from-cyan-400 via-indigo-500 to-purple-600 bg-clip-text text-transparent drop-shadow-[0_0_15px_rgba(99,102,241,0.6)]">
+          Frequently Asked Questions
+        </span>
+      </h2>
+      <p className="text-slate-400 text-lg">Everything you need to know before you start hacking.</p>
+    </div>
+
+    {/* FAQ Grid */}
+    <div className="grid gap-6">
+      {[
+        { 
+          q: "Who can participate?", 
+          a: "Any university student with a valid ID can join! Whether you're a first-year beginner or a final-year pro, we want you here." 
+        },
+        { 
+          q: "What is the team size?", 
+          a: "Teams should consist of 2 to 4 members. Don't have a team? Don't worry, we'll have a team-matching session on Discord!" 
+        },
+        { 
+          q: "Is it an offline or online event?", 
+          a: "This is a 24-hour physical hackathon taking place on campus. High-speed Wi-Fi, food, and plenty of coffee will be provided!" 
+        },
+        { 
+          q: "What should I bring?", 
+          a: "Your laptop, charger, and a curious mind. If you're staying overnight, a sleeping bag and basic toiletries are recommended." 
+        }
+      ].map((item, i) => (
+        <div 
+          key={i} 
+          className="group relative p-8 rounded-2xl bg-slate-900/40 backdrop-blur-sm border border-slate-800 transition-all duration-300 hover:border-indigo-500/50 hover:bg-slate-900/60"
+        >
+          {/* Subtle Side-Glow on Hover */}
+          <div className="absolute inset-y-0 left-0 w-1 bg-indigo-500 opacity-0 group-hover:opacity-100 transition-opacity rounded-l-2xl"></div>
+          
+          <h3 className="text-xl font-bold text-white mb-3 group-hover:text-indigo-400 transition-colors">
+            {item.q}
+          </h3>
+          <p className="text-slate-400 leading-relaxed text-lg">
+            {item.a}
+          </p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* Footer Section */}
       <footer className="py-12 border-t border-slate-800 bg-[#030712] relative z-10">
