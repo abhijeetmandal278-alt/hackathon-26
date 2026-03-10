@@ -138,40 +138,48 @@ export default function Home() {
       {/* Detailed Tracks Section */}
 <section id="tracks" className="py-24 bg-[#030712] relative z-10 border-t border-slate-800 overflow-hidden">
   
-  {/* BOLD BLUEPRINT GRID */}
+  {/* 1. Main Blueprint Grid (40px) */}
   <div className="absolute inset-0 z-0 pointer-events-none" 
       style={{ 
-        backgroundImage: `
-          linear-gradient(to right, rgba(71, 85, 105, 0.2) 1px, transparent 1px), 
-          linear-gradient(to bottom, rgba(71, 85, 105, 0.2) 1px, transparent 1px)
-        `, 
+        backgroundImage: `linear-gradient(to right, rgba(71, 85, 105, 0.2) 1px, transparent 1px), linear-gradient(to bottom, rgba(71, 85, 105, 0.2) 1px, transparent 1px)`, 
         backgroundSize: '40px 40px' 
       }}>
   </div>
 
-  {/* SUB-GRID (Smaller lines for that engineering look) */}
+  {/* 2. Sub-Grid (10px) - Gives it the "Engineering Paper" look */}
   <div className="absolute inset-0 z-0 pointer-events-none" 
       style={{ 
-        backgroundImage: `
-          linear-gradient(to right, rgba(71, 85, 105, 0.1) 1px, transparent 1px), 
-          linear-gradient(to bottom, rgba(71, 85, 105, 0.1) 1px, transparent 1px)
-        `, 
+        backgroundImage: `linear-gradient(to right, rgba(71, 85, 105, 0.1) 1px, transparent 1px), linear-gradient(to bottom, rgba(71, 85, 105, 0.1) 1px, transparent 1px)`, 
         backgroundSize: '10px 10px' 
       }}>
   </div>
 
   <div className="max-w-7xl mx-auto px-6 relative z-10">
-    <h2 className="text-4xl font-extrabold text-indigo-400 mb-16 text-center tracking-tight">
-      Hackathon Tracks
-    </h2>
+    
+    {/* NEON TITLE UPGRADE */}
+    <div className="relative mb-20 text-center">
+      <h2 className="text-4xl md:text-5xl font-black tracking-tight">
+        <span className="bg-gradient-to-r from-cyan-400 via-indigo-500 to-purple-600 bg-clip-text text-transparent drop-shadow-[0_0_15px_rgba(99,102,241,0.6)]">
+          Hackathon Tracks
+        </span>
+      </h2>
+      
+      {/* Underglow Beam - Makes it look 3D */}
+      <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-32 h-[2px] bg-gradient-to-r from-transparent via-cyan-400 to-transparent blur-[1px] opacity-40"></div>
+      <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-48 h-[1px] bg-gradient-to-r from-transparent via-indigo-500 to-transparent blur-[3px] opacity-30"></div>
+    </div>
 
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-      {/* AI Track */}
-      <div className="group relative p-10 rounded-3xl bg-slate-900/40 border border-slate-800 transition-all duration-300 hover:scale-105 hover:border-cyan-500/50 hover:shadow-[0_0_30px_rgba(6,182,212,0.3)] overflow-hidden">
-        <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-600 via-cyan-500 to-teal-400 rounded-3xl opacity-0 group-hover:opacity-30 blur-xl transition-opacity duration-500 pointer-events-none"></div>
-        <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out pointer-events-none"></div>
+
+      {/* 1. AI Track - Cyan/Blue Theme */}
+      <div className="group relative p-10 rounded-3xl bg-slate-900/40 backdrop-blur-sm border border-slate-800 transition-all duration-500 hover:scale-105 hover:border-cyan-500/50 hover:shadow-[0_0_40px_rgba(6,182,212,0.3)] cursor-pointer overflow-hidden">
+        {/* Unique Cyan Glow */}
+        <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-600 via-cyan-500 to-teal-400 rounded-3xl opacity-0 group-hover:opacity-40 blur-2xl transition-opacity duration-500 pointer-events-none"></div>
+        {/* Glass Reflection Swipe */}
+        <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out pointer-events-none"></div>
+
         <div className="relative z-10">
-          <div className="text-4xl mb-6">🤖</div>
+          <div className="text-4xl mb-6 transition-transform group-hover:scale-110 duration-300">🤖</div>
           <h3 className="text-2xl font-bold text-white mb-4">AI & Machine Learning</h3>
           <p className="text-slate-400 text-lg leading-relaxed">
             Leverage LLMs and predictive analytics to solve real-world problems.
@@ -179,12 +187,15 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Web3 Track */}
-      <div className="group relative p-10 rounded-3xl bg-slate-900/40 border border-slate-800 transition-all duration-300 hover:scale-105 hover:border-purple-500/50 hover:shadow-[0_0_30px_rgba(168,85,247,0.3)] overflow-hidden">
-        <div className="absolute -inset-0.5 bg-gradient-to-r from-indigo-600 via-purple-500 to-pink-500 rounded-3xl opacity-0 group-hover:opacity-30 blur-xl transition-opacity duration-500 pointer-events-none"></div>
-        <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out pointer-events-none"></div>
+      {/* 2. Web3 Track - Purple Theme */}
+      <div className="group relative p-10 rounded-3xl bg-slate-900/40 backdrop-blur-sm border border-slate-800 transition-all duration-500 hover:scale-105 hover:border-purple-500/50 hover:shadow-[0_0_40px_rgba(168,85,247,0.3)] cursor-pointer overflow-hidden">
+        {/* Unique Purple Glow */}
+        <div className="absolute -inset-0.5 bg-gradient-to-r from-indigo-600 via-purple-500 to-pink-500 rounded-3xl opacity-0 group-hover:opacity-40 blur-2xl transition-opacity duration-500 pointer-events-none"></div>
+        {/* Glass Reflection Swipe */}
+        <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out pointer-events-none"></div>
+
         <div className="relative z-10">
-          <div className="text-4xl mb-6">⛓️</div>
+          <div className="text-4xl mb-6 transition-transform group-hover:scale-110 duration-300">⛓️</div>
           <h3 className="text-2xl font-bold text-white mb-4">Web3 & Blockchain</h3>
           <p className="text-slate-400 text-lg leading-relaxed">
             Build decentralized applications (dApps) using smart contracts.
@@ -192,18 +203,22 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Open Innovation */}
-      <div className="group relative p-10 rounded-3xl bg-slate-900/40 border border-slate-800 transition-all duration-300 hover:scale-105 hover:border-amber-500/50 hover:shadow-[0_0_30px_rgba(245,158,11,0.3)] overflow-hidden">
-        <div className="absolute -inset-0.5 bg-gradient-to-r from-yellow-500 via-orange-500 to-red-600 rounded-3xl opacity-0 group-hover:opacity-30 blur-xl transition-opacity duration-500 pointer-events-none"></div>
-        <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out pointer-events-none"></div>
+      {/* 3. Open Innovation - Amber Theme */}
+      <div className="group relative p-10 rounded-3xl bg-slate-900/40 backdrop-blur-sm border border-slate-800 transition-all duration-500 hover:scale-105 hover:border-amber-500/50 hover:shadow-[0_0_40px_rgba(245,158,11,0.3)] cursor-pointer overflow-hidden">
+        {/* Unique Amber Glow */}
+        <div className="absolute -inset-0.5 bg-gradient-to-r from-yellow-500 via-orange-500 to-red-600 rounded-3xl opacity-0 group-hover:opacity-40 blur-2xl transition-opacity duration-500 pointer-events-none"></div>
+        {/* Glass Reflection Swipe */}
+        <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out pointer-events-none"></div>
+
         <div className="relative z-10">
-          <div className="text-4xl mb-6">💡</div>
+          <div className="text-4xl mb-6 transition-transform group-hover:scale-110 duration-300">💡</div>
           <h3 className="text-2xl font-bold text-white mb-4">Open Innovation</h3>
           <p className="text-slate-400 text-lg leading-relaxed">
             Build anything disruptive in FinTech, EdTech, or Sustainability.
           </p>
         </div>
       </div>
+
     </div>
   </div>
 </section>
